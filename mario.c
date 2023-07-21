@@ -2,10 +2,12 @@
 
 int main(void)
 {
-    for (int i=0; i<3; i++)
+    int size = 10;
+    for (int i=0; i<size; i++)
      {
-        for (int j=0; j<3; j++){
-        printf("#");
+        for (int j=0; j<size; j++){
+        printf("o");
+
         }
         printf("\n");
     }
