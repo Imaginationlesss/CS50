@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-
+void print_grind(int n);
 
 int main(void){
     //Size of brick wall
