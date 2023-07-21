@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+
+// This is program which emulates mario.
+
 int main(void)
 {
     const int size = 10;
