@@ -6,6 +6,11 @@
 int main(void){
     //Size of brick wall
     const int size = get_int("Size: ");
+    print_grid(size);
+
+}
+
+void print_grid(int n) {
 
     for (int i=0; i<size; i++)
      {
@@ -14,8 +19,5 @@ int main(void){
        }
         printf("\n");
     }
-}
 
-void print_grid(int n) {
-    
 }
