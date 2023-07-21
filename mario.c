@@ -5,7 +5,8 @@ void print_grind(int n);
 
 int main(void){
     //Size of brick wall
-    const int size = get_int("Size: ");
+    int size = 0;
+    size = get_int("Size: ");
     print_grid(size);
 
 }
