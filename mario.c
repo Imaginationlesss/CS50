@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void print_grind(int n);
+void print_grid(int n);
 
 int main(void){
     //Size of brick wall
@@ -13,9 +13,9 @@ int main(void){
 
 void print_grid(int n) {
 
-    for (int i=0; i<size; i++)
+    for (int i=0; i<n; i++)
      {
-        for (int j=0; j<size; j++){
+        for (int j=0; j<n; j++){
         printf("o");
        }
         printf("\n");
