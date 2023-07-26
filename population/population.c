@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 int main(void)
+
 {
 
     // TODO: Prompt for start size
-    int n;
+    int n = 0;
     do
     {
         n = get_int ("Starting Size: ");
@@ -14,7 +15,7 @@ int main(void)
 
     // TODO: Prompt for end size
 
-    int m;
+    int m = 0;
     do
     {
         m = get_int ("End Size: ");
@@ -31,6 +32,7 @@ int main(void)
         years++;
 
     }
+
     // TODO: Print number of years
 
     printf("Years %i\n", years);
