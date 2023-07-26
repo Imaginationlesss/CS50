@@ -35,12 +35,12 @@ int main(void)
     else
     {
 
-    do
-    {
-        n = n + (n / 3) - (n / 4);
-        years++;
-    }
-    while (n < m);
+        do
+        {
+            n = n + (n / 3) - (n / 4);
+            years++;
+        }
+        while (n < m);
     }
     // TODO: Print number of years
 
