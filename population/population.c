@@ -25,13 +25,13 @@ int main(void)
     // TODO: Calculate number of years until we reach threshold
 
     int years = 0;
-    while (n < m)
+    do
     {
         n += n / 3;
         n += n / 4;
         years++;
     }
-
+    while (n < m);
     // TODO: Print number of years
 
     printf("Years: %i\n", years);
