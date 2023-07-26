@@ -26,7 +26,8 @@ int main(void)
     int years = 0;
     while (n < m)
     {
-        n = n + (n/3) - (n/4);
+        n = n + (n/3);
+        n = n + (n/4);
         years++;
 
     }
