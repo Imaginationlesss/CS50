@@ -23,6 +23,8 @@ int main(void)
     while (n > m);
 
     // TODO: Calculate number of years until we reach threshold
+    //When cheking correctnes of code I didn't know how to fix it, when starting and ending numbers match years should show "0" insted of "1", so i used "If else" function which i know about from my previous experiense
+    // with coding, which wasn't provided in first weeks lecture but it fixed the problem and code works perfectly, so I assume it's okay to use here and it will be submitter without any issues like "academic honesty".
 
     int years = 0;
 
