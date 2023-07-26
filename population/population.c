@@ -9,7 +9,7 @@ int main(void)
     int n = 0;
     do
     {
-        n = get_int ("Starting Size: ");
+        n = get_int("Starting Size: ");
     }
     while (n < 9);
 
@@ -18,7 +18,7 @@ int main(void)
     int m = 0;
     do
     {
-        m = get_int ("End Size: ");
+        m = get_int("End Size: ");
     }
     while (m < n);
 
@@ -30,7 +30,6 @@ int main(void)
         n += n / 3;
         n += n / 4;
         years++;
-
     }
 
     // TODO: Print number of years
