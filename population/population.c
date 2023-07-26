@@ -24,11 +24,13 @@ int main(void)
     // TODO: Calculate number of years until we reach threshold
 
     int upscale;
+    int years;
 
     do{
         upscale = n + (n/3) - (n/4);
+        years = upscale - n;
     }
-    while (upscale < m);
+    while (years < m);
 
     // TODO: Print number of years
 
