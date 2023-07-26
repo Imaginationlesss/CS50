@@ -6,8 +6,6 @@ int main(void)
 
     // TODO: Prompt for start size
     int n;
-    int m;
-    int upscale;
     do
     {
         n = get_int ("Starting Size: ");
@@ -25,7 +23,7 @@ int main(void)
 
     // TODO: Calculate number of years until we reach threshold
 
-    int upscale = n + (n/3) + (m/4)
+    int upscale = n + (n/3) + (m/4);
 
     // TODO: Print number of years
 
