@@ -6,8 +6,7 @@ int main(void)
 {
 
     // TODO: Prompt for start size
-    int n = 0;
-    do
+    int n;
     {
         n = get_int("Starting Size: ");
     }
@@ -15,7 +14,7 @@ int main(void)
 
     // TODO: Prompt for end size
 
-    int m = 0;
+    int m;
     do
     {
         m = get_int("End Size: ");
