@@ -6,6 +6,7 @@ int main(void)
 
     // TODO: Prompt for start size
     int n;
+    int m;
     do
     {
         n = get_int ("Starting Size: ");
