@@ -30,6 +30,7 @@ int main(void)
     {
 
         printf("Years: %i\n", years);
+        return 0;
     }
     else
     {
