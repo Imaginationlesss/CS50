@@ -6,8 +6,8 @@
 
 int main(void)
 {
-    int name;
-    int location;
+    string name;
+    string location;
     // Ask for your name and where live
     name = get_string("What is your name? ");
     location = get_string("Where do you live? ");
