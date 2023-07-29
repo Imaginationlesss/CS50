@@ -25,7 +25,7 @@ int main(void)
             if (i + j < block)
             {
 
-                printf(".");
+                printf(" ");
             }
             else
 
