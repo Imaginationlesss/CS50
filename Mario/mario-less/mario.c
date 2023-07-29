@@ -16,17 +16,24 @@ int main(void)
 
     // Drawing the pirymid'
 
-    int block = 1;
+    int block = height - 1;
 
     for (int i = 0; i < height; i++)
      {
-        for(int j = 0; j < height; j++){
+        for(int j = 0; j < height; j++)
+        {
 
-        printf("#");
-        block++;
+            if(i+j < block)
+            {
 
+                printf(".");
+
+            }else
+
+                printf("#");
+
+        }
+
+        printf("\n");
     }
-
-    printf("\n");
-}
 }
