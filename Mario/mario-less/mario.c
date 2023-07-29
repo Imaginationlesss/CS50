@@ -13,7 +13,7 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    // Drawing the pirymid'
+    // Drawing the parymid
 
     int block = height - 1;
 
