@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    //Getting the height input
     int height = 0;
 
     do
@@ -12,6 +13,8 @@ int main(void)
 
     }
     while (height < 1 || height > 8);
+
+    // Drawing the pirymid
 
     for (int i = 0; i < height; i++)
      {
