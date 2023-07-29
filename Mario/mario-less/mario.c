@@ -15,12 +15,12 @@ int main(void)
     while (height < 1 || height > 8);
 
     // Drawing the pirymid'
-    int block = 
+    int block =
 
     for (int i = 0; i < block; i++)
      {
 
-        for(int j = 0; j > height; j--)
+        for(int j = 0; j > height; j++)
 
         {
 
