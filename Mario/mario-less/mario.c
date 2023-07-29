@@ -16,14 +16,14 @@ int main(void)
 
     // Drawing the pirymid'
 
-    int block = height - (height - 1);
+    int block = 1;
 
     for (int i = 0; i < height; i++)
      {
         for(int j = 0; j < block; j++){
 
         printf("#");
-        block--;
+        block++;
 
     }
     printf("\n");
