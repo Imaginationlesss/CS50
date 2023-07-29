@@ -14,10 +14,13 @@ int main(void)
     }
     while (height < 1 || height > 8);
 
-    // Drawing the pirymid
+    // Drawing the pirymid'
+    int line = 0;
+
+    do{
 
     for (int i = 0; i < height; i++)
-     
+     {
 
         printf("#");
 
@@ -26,4 +29,5 @@ int main(void)
         printf("\n");
 
     }
+    while(line < height);
 }
