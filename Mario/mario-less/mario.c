@@ -18,14 +18,15 @@ int main(void)
 
     int block = 1;
 
-    for (int i = 0; i < height; i++)
+    for (int i = 0; i < block; i++)
      {
-        for(int j = 0; j < block; j++){
+        for(int j = 0; j < height; j++){
 
         printf("#");
         block++;
 
     }
+
     printf("\n");
 }
 }
