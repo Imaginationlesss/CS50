@@ -17,10 +17,10 @@ int main(void)
     // Drawing the pirymid'
     int block =
 
-    for (int i = 0; i < block; i++)
+    for (int i = 0; i < height; i++)
      {
 
-        for(int j = 0; j > height; j++)
+        for(int j = 0; j > block; j--)
 
         {
 
