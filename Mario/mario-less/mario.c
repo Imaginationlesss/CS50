@@ -16,7 +16,7 @@ int main(void)
 
     // Drawing the pirymid'
 
-    for (int i = 0; i < height; i++)
+    for (int i = 0; i < ; i++)
      {
 
         for(int j = 0; j > height; j--)
