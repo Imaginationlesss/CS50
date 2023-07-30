@@ -5,6 +5,7 @@ int main(void)
 {
     do
     {
-        long card = 
+        long card = get_long("Number: ");
     }
+    while (card < )
 }
