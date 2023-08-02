@@ -31,10 +31,9 @@ float calc_hours(int hours[], int weeks, char output)
     int average = 0:
 
     if(char output == 'T'){
-
-        printf("Total is %i total \n");
+        return total;
     }
     else {
-        printf("Average is %i average \n");
+        return total / weeks;
     }
 }
