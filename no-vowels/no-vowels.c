@@ -32,23 +32,23 @@ int main(int argc, string argv[])
             switch (c)
             {
             case 'a':
-                output = '6'
+                output = '6';
                 break;
 
             case 'e':
-                output[i] = '3'
+                output[i] = '3';
                 break;
 
                 case 'i':
-                output[i] = '1'
+                output[i] = '1';
                 break;
 
                 case 'o':
-                output[i] = '0'
+                output[i] = '0';
                 break;
 
             default:
-                output[i] c;
+                output[i] = c;
                 break;
             }
     }
