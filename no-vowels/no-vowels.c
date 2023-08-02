@@ -18,47 +18,47 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    string word = argv[1];
+        string word = argv[1];
 
-    string result = replace(word);
+        string result = replace(word);
 
-    printf ("%s,\n", result);
+        printf ("%s,\n", result);
 
-    string replace(string input)
-    {
-        string output = input;
-
-
-        for (int i = 0; i < strlen; i++)
-        {
-            char c = tolower(input[i]);
-
-
-
-            switch (c)
+            string replace(string input)
             {
-            case 'a':
-                output = '6';
-                break;
+                string output = input;
 
-            case 'e':
-                output[i] = '3';
-                break;
 
-                case 'i':
-                output[i] = '1';
-                break;
+                for (int i = 0; i < strlen; i++)
+                {
+                    char c = tolower(input[i]);
 
-                case 'o':
-                output[i] = '0';
-                break;
 
-            default:
-                output[i] = c;
-                break;
+
+                    switch (c)
+                    {
+                    case 'a':
+                        output = '6';
+                        break;
+
+                    case 'e':
+                        output[i] = '3';
+                        break;
+
+                        case 'i':
+                        output[i] = '1';
+                        break;
+
+                        case 'o':
+                        output[i] = '0';
+                        break;
+
+                    default:
+                        output[i] = c;
+                        break;
+                    }
             }
-    }
 
-        return output;
+            return output;
 }
 
