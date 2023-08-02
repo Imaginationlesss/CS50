@@ -22,7 +22,7 @@ int main(int argc, string argv[])
 
     string result = replace(word);
 
-    
+    printf ("%s,\n", result);
 
     string replace(string input)
     {
