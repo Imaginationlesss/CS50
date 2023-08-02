@@ -33,32 +33,31 @@ int main(int argc, string argv[])
                 {
                     char c = tolower(input[i]);
 
-
-
                     switch (c)
                     {
-                    case 'a':
-                        output = '6';
-                        break;
+                        case 'a':
+                            output = '6';
+                            break;
 
-                    case 'e':
-                        output[i] = '3';
-                        break;
+                        case 'e':
+                            output[i] = '3';
+                            break;
 
                         case 'i':
-                        output[i] = '1';
-                        break;
+                            output[i] = '1';
+                            break;
 
                         case 'o':
-                        output[i] = '0';
-                        break;
+                            output[i] = '0';
+                            break;
 
-                    default:
-                        output[i] = c;
-                        break;
+                        default:
+                            output[i] = c;
+                            break;
                     }
             }
 
             return output;
+    }
 }
 
