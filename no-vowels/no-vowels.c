@@ -26,6 +26,7 @@ int main(int argc, string argv[])
         for (int i = 0; i < strlen; i++)
         {
             char c = tolower(input[i]);
+            printf("%c,\n" input[i]);
         }
 
             switch (n)
