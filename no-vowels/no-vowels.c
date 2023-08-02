@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     if (argc != 2)
     {
         printf("Wrong argument/n");
-        retunr 1;
+        return 1;
     }
 
     string replace(string input)
