@@ -24,6 +24,8 @@ int main(int argc, string argv[])
 
         printf ("%s,\n", result);
 
+        
+
             string replace(string input)
             {
                 string output = input;
