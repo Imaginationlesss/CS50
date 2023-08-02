@@ -22,10 +22,11 @@ int main(int argc, string argv[])
     {
         string output = input;
 
+
         for (int i = 0; i < strlen; i++)
         {
             char c = tolower(input[i]);
-
+        }
 
             switch (n)
             {
@@ -48,10 +49,9 @@ int main(int argc, string argv[])
             default:
                 output[i] c;
                 break;
-        }
-                }
+            }
+    }
 
         return output;
-    }
 }
-}
+
