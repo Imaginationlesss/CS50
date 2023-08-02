@@ -25,8 +25,32 @@ int main(int argc, string argv[])
         for (int i = 0; i < strlen; i++)
         {
             char c = tolower(input[i]);
-            printf("%c\n", input[i]);
+
+
+            switch (n)
+            {
+            case 'a':
+                output = '6'
+                break;
+
+            case 'e':
+                output[i] = '3'
+                break;
+
+                case 'i':
+                output[i] = '1'
+                break;
+
+                case 'o':
+                output[i] = '0'
+                break;
+
+            default:
+                output[i] c;
+                break;
         }
+                }
+
         return output;
     }
 }
