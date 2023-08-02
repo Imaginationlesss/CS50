@@ -29,7 +29,7 @@ int main(int argc, string argv[])
                 string output = input;
 
 
-                for (int i = 0; i < strlen; i++)
+                for (int i = 0; i < strlen(input); i++)
                 {
                     char c = tolower(input[i]);
 
