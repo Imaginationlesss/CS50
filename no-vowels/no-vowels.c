@@ -8,6 +8,7 @@
 #include <string.h>
 #include <ctype.h>
 
+
 string replace(string input);
 
 int main(int argc, string argv[])
