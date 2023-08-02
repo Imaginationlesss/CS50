@@ -27,13 +27,14 @@ int main(int argc, string argv[])
 
 
 
-            string replace(string input)
-            {
+            string replace(string input);
+
                 string output = input;
 
 
                 for (int i = 0; i < strlen(input); i++)
                 {
+
                     char c = tolower(input[i]);
 
                     switch (c)
@@ -62,5 +63,4 @@ int main(int argc, string argv[])
 
             return output;
             }
-}
 
