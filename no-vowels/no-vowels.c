@@ -5,6 +5,7 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 string replace(string input);
 
@@ -16,8 +17,16 @@ int main(int argc, string argv[])
         retunr 1;
     }
 
-    string replace(string input){
-        
+    string replace(string input)
+    {
+        string output = input;
+
+        for (int i = 0; i < strlen; i++)
+        {
+            char c = tolower(input[i]);
+            printf("%c\n", input[i]);
+        }
+        return output;
     }
 }
 }
