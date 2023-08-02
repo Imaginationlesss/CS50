@@ -28,12 +28,14 @@ int main(void)
 float calc_hours(int hours[], int weeks, char output)
 {
     int total = 0;
-    int average = 0:
+    int average = total / weeks;
 
-    if(char output == 'T'){
+    for(int i = 0; i < weeks; i++){
+    if(output == 'T'){
         return total;
     }
     else {
-        return total / weeks;
+        return average;
     }
+}
 }
