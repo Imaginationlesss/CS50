@@ -24,7 +24,7 @@ int main(int argc, string argv[])
 
         printf ("%s,\n", result);
 
-        
+
 
             string replace(string input)
             {
@@ -57,9 +57,9 @@ int main(int argc, string argv[])
                             output[i] = c;
                             break;
                     }
-            }
+                }
 
             return output;
-    }
+            }
 }
 
