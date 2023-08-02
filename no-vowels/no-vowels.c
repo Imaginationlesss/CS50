@@ -18,6 +18,12 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    string word = argv[1];
+
+    string result = replace(word);
+
+    
+
     string replace(string input)
     {
         string output = input;
