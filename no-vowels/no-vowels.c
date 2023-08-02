@@ -56,7 +56,7 @@ int main(int argc, string argv[])
                             break;
 
                         default:
-                            output[i] = c;
+                            output[i] = input [i];
                             break;
                     }
                 }
