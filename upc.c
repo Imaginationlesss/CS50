@@ -11,14 +11,7 @@ int main(void)
 
     for (int i = 0; i < strlen(s); i++);
     {
-        if (islower(s[i]))
-        {
-            printf("%c", toupper(s[i]);
-        }
-        else
-        {
-            printf("%c", s[i]);
-        }
+        printf("%c", toupper(s[i]);
     }
     printf("\n");
 }
