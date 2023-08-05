@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctyope.h>
+#include <ctype.h>
 
 int main(void)
 {
@@ -13,7 +13,11 @@ int main(void)
     {
         if (s[i] >= 'a' && s[i] <= 'z')
         {
-            
+            printf("%c", s[i] - 32);
+        }
+        else
+        {
+            printf("%c", s[i]);
         }
     }
 }
