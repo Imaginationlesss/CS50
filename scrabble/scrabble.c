@@ -24,10 +24,19 @@ int main(void)
         printf("Player 1 Wins! ");
     }
     else
+    {
         printf("Player 2 Wins!");
+    }
+    if (score1 == score2)
+    {
+        printf("It'a Tie!");
+    }
+
 }
 
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
+
+    
 }
