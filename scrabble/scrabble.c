@@ -31,6 +31,7 @@ int main(void)
     {
         printf("It'a Tie!");
     }
+    printf("\n");
 
 }
 
@@ -43,7 +44,7 @@ int compute_score(string word)
     {
         if((word[i] >= 'A' && word[i] <= 'Z') || (word[i] >= 'a' && word[i] <= 'z'))
         {
-            wordvalue += POINTS[i];
+            wordvalue += POINTS[word[i] - 65];
         }
         }
         return wordvalue;
