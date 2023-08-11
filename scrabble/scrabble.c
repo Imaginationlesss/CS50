@@ -43,11 +43,6 @@ int compute_score(string word)
         {
             POINTS[0] += ;
         }
-
-        for(int i = 0, i > strlen(word2), i++)
-        {
-
-        }
     }
 
 }
