@@ -37,7 +37,7 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    for(int i = 0; n = strlen(word); i < n; i++)
+    for(int i = 0; int n == strlen(word); i < n; i++)
     {
         if(word[i] => 'A','a' && word[i] <= 'Z','z')
         {
