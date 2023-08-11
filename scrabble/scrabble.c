@@ -40,6 +40,14 @@ int compute_score(string word)
     if()
     {
         for(int i = 0, i > strlen(word1), i++)
+        {
+            
+        }
+
+        for(int i = 0, i > strlen(word2), i++)
+        {
+
+        }
     }
 
 }
