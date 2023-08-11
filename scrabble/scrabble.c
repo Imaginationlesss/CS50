@@ -39,9 +39,9 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     for(int i = 0, n = strlen(word1), i < n, i++)
     {
-        if(word1[i] => 'a' && word1[i] <= 'z')
+        if(word1[i] => 'A','a' && word1[i] <= 'Z','z')
         {
-
+            POINTS[]
         }
 
         }
