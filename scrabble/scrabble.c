@@ -41,9 +41,14 @@ int compute_score(string word)
 
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        if ((word[i] >= 'A' && word[i] <= 'Z') || (word[i] >= 'a' && word[i] <= 'z'))
+        if ((word[i] >= 65 && word[i] <= 90)
         {
             wordvalue += POINTS[word[i] - 65];
+        }
+
+        if(word[i] >= 90 && word[i] <= 122))
+        {
+            wordvalue += POINTS[word[i] - 97];
         }
     }
     return wordvalue;
