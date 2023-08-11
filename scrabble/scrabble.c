@@ -37,7 +37,7 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    int wordvalue;
+    int wordvalue = 0;
 
     for(int i = 0, n = strlen(word); i < n; i++)
     {
@@ -45,9 +45,8 @@ int compute_score(string word)
         {
             wordvalue = word[i] * POINTS[i];
         }
-            return wordvalue;
         }
-        printf("\n");
+        return wordvalue;
 }
 
 
