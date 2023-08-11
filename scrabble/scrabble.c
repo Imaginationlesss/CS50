@@ -41,7 +41,7 @@ int compute_score(string word)
     {
         for(int i = 0, i > strlen(word1), i++)
         {
-            
+            POINTS[0] += ;
         }
 
         for(int i = 0, i > strlen(word2), i++)
