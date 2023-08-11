@@ -41,7 +41,7 @@ int compute_score(string word)
     {
         if((word[i] >= 'A' && word[i] <= 'Z') || (word[i] >= 'a' && word[i] <= 'z'))
         {
-            word[strlen[i]] * POINTS[i];
+            word[strlen[i]] * POINTS[];
         }
 
         }
