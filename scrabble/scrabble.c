@@ -37,14 +37,17 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
+    int wordvalue;
+
     for(int i = 0, n = strlen(word); i < n; i++)
     {
         if((word[i] >= 'A' && word[i] <= 'Z') || (word[i] >= 'a' && word[i] <= 'z'))
         {
-            int wordvalue = word[i] * POINTS[i];
+            wordvalue = word[i] * POINTS[i];
         }
-
+            return wordvalue;
         }
-    }
+        printf("\n");
+}
 
 
