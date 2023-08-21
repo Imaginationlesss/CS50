@@ -34,7 +34,7 @@ int main(void)
     }
     else
     {
-        printf("Grade: %i\n", index);
+        printf("Grade %i\n", index);
         return 0;
     }
     }
