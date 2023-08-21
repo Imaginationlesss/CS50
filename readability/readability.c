@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     calculation
 
     // Calculating number of letters in text
-    int count_letters{
+    int count_letters(string){
     int letters = 0;
     for(int i = 0, n = strlen(text); i < n; i++)
     {
