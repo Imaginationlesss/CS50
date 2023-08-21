@@ -45,10 +45,9 @@ int main(int argc, string argv[])
     printf("%i sentences\n", sentences);
 
     //Using Coleman-Liau formula to calculate the grade of the text
-    int L = letters/words*100
-    int S = sentences/words*100
-    int X = 0.0588 * L - 0.296 * S - 15.8
-    if(index)
+    int L = letters/words*100;
+    int S = sentences/words*100;
+    int X = 0.0588 * L - 0.296 * S - 15.8;
 
     printf("Grade: %i\n", (round)X );
 
