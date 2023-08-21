@@ -21,7 +21,7 @@ int main(void)
 
     if(X < 1)
     {
-        printf("Before Grade\n");
+        printf("Before Grade 1\n");
         return 0;
     }
     else if(X >= 16)
