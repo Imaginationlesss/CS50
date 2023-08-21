@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     count_letters;
     count_words;
     count_sentences;
-    calculation
+    calculationl
 
     // Calculating number of letters in text
     int count_letters(string){
