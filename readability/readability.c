@@ -44,7 +44,7 @@ int main(void)
     }
 
     //Calculating number of sentences in text
-    int count_letters(string text){
+    int count_sentences(string text){
     int sentences = 0;
         for(int i = 0, n = strlen(text); i < n; i++)
         {
@@ -52,6 +52,7 @@ int main(void)
             sentences++;
 
         }
+        return senteces;
     }
 
     //Using Coleman-Liau formula to calculate the grade of the text
