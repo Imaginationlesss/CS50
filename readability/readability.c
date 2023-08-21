@@ -78,7 +78,7 @@ int main(void)
     //Using Coleman-Liau formula to calculate the grade of the text
     int calculation(int letters, int words, int sentences)
     {
-        float L = (letters/words)*100;
+        float L = (letters/words);
         float S = (sentences/words)*100;
         float index = (0.0588 * L) - (0.296 * S) - 15.8;
 
