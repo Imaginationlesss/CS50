@@ -14,10 +14,10 @@ int main(void)
     string text = get_string("Text: ");
     printf("Text: %s\n", text);\
 
-    int count_letters(string text);
-    int count_words(string text);
-    int count_sentences(string text);
-    int calculation(int letters, int words, int sentences);
+     count_letters(string text);
+     count_words(string text);
+     count_sentences(string text);
+    calculation(int letters, int words, int sentences);
 
     if(X < 1)
     {
