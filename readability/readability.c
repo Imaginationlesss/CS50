@@ -17,7 +17,7 @@ int main(void)
      count_letters(string text);
      count_words(string text);
      count_sentences(string text);
-    calculation(int letters, int words, int sentences);
+     calculation(int letters, int words, int sentences);
 
     if(X < 1)
     {
