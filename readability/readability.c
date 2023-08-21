@@ -14,22 +14,25 @@ int main(void)
     string text = get_string("Text: ");
     printf("Text: %s\n", text);\
 
-    int count_letters(text);
-    int count_words(text);
-    int count_sentences(text);
-    int calculationl();
+    int count_letters(string text);
+    int count_words(string text);
+    int count_sentences(string text);
+    int calculation(int letters, int words, int sentences);
 
     if(X < 1)
     {
         printf("Before Grade\n");
+        return 0;
     }
     else if(X >= 16)
     {
         printf("Grade 16+\n");
+        return 0;
     }
     else
     {
         printf("Grade: %i\n", X);
+        return 0;
     }
     }
 
