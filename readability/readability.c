@@ -50,7 +50,7 @@ int main(int argc, string argv[])
     int X = 0.0588 * L - 0.296 * S - 15.8
     if(index)
 
-    printf("Grade: %i\n", X)
+    printf("Grade: %i\n", (round)X );
 
 }
 
