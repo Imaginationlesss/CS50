@@ -13,8 +13,13 @@ int main(int argc, string argv[])
     // Getting input text
     string text = get_string("Text: ");
     printf("Text: %s\n", text);
+    count_letters;
+    count_words;
+    count_sentences;
+    calculation
 
     // Calculating number of letters in text
+    int count_letters{
     int letters = 0;
     for(int i = 0, n = strlen(text); i < n; i++)
     {
@@ -22,7 +27,7 @@ int main(int argc, string argv[])
         letters++;
 
     }
-    printf("%i letters\n", letters);
+    }
 
     //Calculating number of words in text
     int words = 1;
@@ -32,7 +37,6 @@ int main(int argc, string argv[])
         words++;
 
     }
-    printf("%i words\n", words);
 
     //Calculating number of sentences in text
     int sentences = 0;
@@ -42,7 +46,6 @@ int main(int argc, string argv[])
         sentences++;
 
     }
-    printf("%i sentences\n", sentences);
 
     //Using Coleman-Liau formula to calculate the grade of the text
     float L = letters/words*100;
