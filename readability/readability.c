@@ -16,23 +16,25 @@ int main(void)
 {
     // Getting input text
     string text = get_string("Text: ");
-    printf("Text: %s\n", text);\
 
-    int letters = count_letters();
-    int
-    if(X < 1)
+    int letters = count_letters(text);
+    int words = count_words(text);
+    int sentences = count_sentences(text);
+    int index = calculation(letters, words, sentences);
+
+    if(index < 1)
     {
         printf("Before Grade 1\n");
         return 0;
     }
-    else if(X >= 16)
+    else if(index >= 16)
     {
         printf("Grade 16+\n");
         return 0;
     }
     else
     {
-        printf("Grade: %i\n", X);
+        printf("Grade: %i\n", index);
         return 0;
     }
     }
@@ -70,11 +72,11 @@ int main(void)
                 sentences++;
 
             }
-            return senteces;
+            return sentences;
     }
 
     //Using Coleman-Liau formula to calculate the grade of the text
-    int calculation(int)
+    int calculation(int letters, int words, int sentences)
     {
         float L = letters/words*100;
         float S = sentences/words*100;
