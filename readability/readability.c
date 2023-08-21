@@ -80,7 +80,7 @@ int main(void)
     {
         float L = (letters/words)(float)*100;
         float S = (sentences/words)(float)*100;
-        float index = 0.0588 * L - 0.296 * S - 15.8;
+        float index = (0.0588 * L) - (0.296 * S) - 15.8;
 
         int X = round(index);
 
