@@ -40,6 +40,7 @@ int main(int argc, string argv[])
             }
         }
     }
+    
     // Receive input
     string plaintext = get_string("plaintext: ");
 
@@ -61,10 +62,10 @@ int main(int argc, string argv[])
         else
         {
             printf("%c", plaintext[i]);
-            return 0;
         }
-
+    printf("\n");
     }
+    return 0;
 
     // VCHPRZGJNTLSKFBDQWAXEUYMOI
     // ABCDEFGHIJKLMNOPQRSTUVWXYZ
