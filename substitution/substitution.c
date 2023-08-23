@@ -50,7 +50,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        if(plaintext[i] == key[i])
+        if(isupper(plaintext[i]) )
         {
             cipertext +=plaintext[i] + key[i];
         }
