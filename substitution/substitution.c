@@ -16,7 +16,7 @@ int main(int argc, string argv[])
         printf("Key must contain alphabetic characters\n");
         return 1;
     }
-    else if(argc < 26 )
+    else if(argv[strlen] != 26 )
     {
         printf("Key must contain 26 characters\n");
         return 1;
