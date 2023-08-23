@@ -55,6 +55,11 @@ int main(int argc, string argv[])
             int difference = plaintext[i] - 65;
             cipertext += key[difference];
         }
+        else if(islower(plaintext[i]))
+        {
+            int difference = plaintext[i] - 90;
+            cipertext += key[difference];
+        }
     }
 
     printf("cipertext: %s\n", cipertext);
