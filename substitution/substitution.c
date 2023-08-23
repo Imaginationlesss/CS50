@@ -56,7 +56,7 @@ int main(int argc, string argv[])
         }
     }
 
-    printf("cipertext: %s", cipertext);
+    printf("cipertext: %s\n", cipertext);
     return 0;
 
 
