@@ -5,18 +5,19 @@
 
 int main(int argc, string argv[])
 {
+    string key = argv[1];
+
     //Check the key
-    if(argv[1] == 0)
+    if(key == 0)
     {
         printf("Usage: ./substitution KEY\n");
         return 1;
     }
 
-    string key = strlen(argv[1]);
 
     for(int i = 0, n = strlen(key); i < n; i++)
     {
-        if(!isalpha(key)
+        if(!isalpha(key[i])
         {
 
         printf("Key must contain alphabetic characters\n");
