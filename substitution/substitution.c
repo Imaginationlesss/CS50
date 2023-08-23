@@ -30,7 +30,13 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    
+    for (int i = 0, n = strlen(key); i < n; i++)
+    {
+        if (!isalpha(key[i]))
+        {
+        printf ("Key must contain alphabetic characters\n");
+        return 1;
+        }
     //Receive input
     string plaintext = get_string ("plaintext: ");
 
