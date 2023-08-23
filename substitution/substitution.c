@@ -32,7 +32,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(key); i < n; i++)
     {
-        if (strcmp(key[i]))
+        if (strlen(key[i]))
         {
         printf ("Key must not contain repeated characters\n");
         return 1;
@@ -41,7 +41,7 @@ int main(int argc, string argv[])
     string plaintext = get_string ("plaintext: ");
 
     //Check the input
-    
+
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
         if (!isalpha(plaintext[i]))
