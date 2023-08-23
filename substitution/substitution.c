@@ -50,14 +50,15 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
+        int difference = 1;
         if(isupper(plaintext[i]))
         {
-            int difference = plaintext[i] - 65;
+            difference += plaintext[i] - 65;
             cipertext += key[difference];
         }
         else if(islower(plaintext[i]))
         {
-            int difference = plaintext[i] - 90;
+            difference += plaintext[i] - 90;
             cipertext += key[difference];
         }
     }
