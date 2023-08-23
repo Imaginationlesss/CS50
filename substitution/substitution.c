@@ -12,14 +12,14 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    for(int i = 0; i < 26; i++){
+    for(int i = 0, n = strlen(argv[]); i < 26; i++){
     if(strlen(argv[i]) != isalpha )
 
         printf("Key must contain alphabetic characters\n");
         return 1;
     }
 
-    
+
     if(argv[strlen] != 26 )
     {
         printf("Key must contain 26 characters\n");
