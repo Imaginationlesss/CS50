@@ -46,12 +46,7 @@ int main(int argc, string argv[])
 
     //Check the input
 
-    for (int i = 0, n = strlen(plaintext); i < n; i++)
-    {
-        if (!isalpha(plaintext[i]))
-        {
-        printf ("Text must contain alphabetic characters\n");
-        return 1;
+    
         }
     }
 }
