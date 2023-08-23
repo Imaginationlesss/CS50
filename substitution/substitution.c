@@ -52,7 +52,8 @@ int main(int argc, string argv[])
     {
         if(isupper(plaintext[i]))
         {
-            cipertext +=plaintext[i] + key[i];
+
+            cipertext += key[i];
         }
     }
 
@@ -60,6 +61,7 @@ int main(int argc, string argv[])
     return 0;
 
     //VCHPRZGJNTLSKFBDQWAXEUYMOI
+    //ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 
 
