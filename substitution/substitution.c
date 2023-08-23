@@ -69,7 +69,7 @@ int main(int argc, string argv[])
     printf("\n");
     return 0;
 
-    // VCHPRZGJNTLSKFBDQWAXEUYMOI
+    // yukfrnlbavmwzteogxhcipjsqd
     // ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
     // for each character in plaintext
