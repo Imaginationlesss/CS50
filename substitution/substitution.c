@@ -56,6 +56,9 @@ int main(int argc, string argv[])
         }
     }
 
+    printf("cipertext: %s", cipertext);
+    return 0;
+
 
     //for each character in plaintext
     //find corresponding character in key
