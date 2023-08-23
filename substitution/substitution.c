@@ -49,16 +49,16 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        int difference = 1;
+        int difference = 0;
         if (isupper(plaintext[i]))
         {
             difference += plaintext[i] - 65;
-            cipertext += key[difference];
+            printf("%c", key[difference];
         }
         else if (islower(plaintext[i]))
         {
             difference += plaintext[i] - 97;
-            cipertext += key[difference];
+            printf("%c", key[difference];
         }
     }
 
