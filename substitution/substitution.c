@@ -12,9 +12,11 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    for(int i = 0, n = strlen(argv[1]); i < n; i++)
+    string key = strlen(argv[1]);
+
+    for(int i = 0, n = strlen(key); i < n; i++)
     {
-        if(!isalpha(argv[1]))
+        if(!isalpha(key)
         {
 
         printf("Key must contain alphabetic characters\n");
