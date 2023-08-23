@@ -5,6 +5,8 @@
 
 int main(int argc, string argv[])
 {
+    //Check the key
+    if(argv[])
     //Receive input
     string plaintext = get_string("plaintext: ");
 
