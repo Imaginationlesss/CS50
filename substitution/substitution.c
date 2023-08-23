@@ -50,15 +50,14 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        
-        cipertext += key[i]
-    }
-
-    for each character in plaintext
-    find corresponding character in key
-    add corresponding character to ciphertext
-
-
+        if(plaintext[i] == key[i])
+        {
+            cipertext +=plaintext[i] + key[i];
         }
     }
+
+
+    //for each character in plaintext
+    //find corresponding character in key
+    //add corresponding character to ciphertext
 }
