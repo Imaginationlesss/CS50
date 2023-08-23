@@ -50,7 +50,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        if(isupper(plaintext[i]) )
+        if(isupper(plaintext[i]))
         {
             cipertext +=plaintext[i] + key[i];
         }
@@ -58,6 +58,9 @@ int main(int argc, string argv[])
 
     printf("cipertext: %s\n", cipertext);
     return 0;
+
+    //VCHPRZGJNTLSKFBDQWAXEUYMOI
+
 
 
     //for each character in plaintext
