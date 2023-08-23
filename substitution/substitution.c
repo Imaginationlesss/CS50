@@ -46,7 +46,7 @@ int main(int argc, string argv[])
 
     // Transform into cipertext
 
-    printf("cipertext: ");
+    printf("ciphertext: ");
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
