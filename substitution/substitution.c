@@ -60,13 +60,11 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf("%c", plaintext);
+            printf("%c", plaintext[i]);
             return 0;
         }
 
     }
-    printf("cipertext: %s\n", cipertext);
-    return 0;
 
     // VCHPRZGJNTLSKFBDQWAXEUYMOI
     // ABCDEFGHIJKLMNOPQRSTUVWXYZ
