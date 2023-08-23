@@ -45,6 +45,13 @@ int main(int argc, string argv[])
     string plaintext = get_string("plaintext: ");
 
     // Transform into cipertext
+    for(int i = 0, n = strlen(key); i < n; i++)
+    {
+        if(islower(key[i]))
+        {
+            key[i] = key[i] - 32;
+        }
+    }
 
     printf("ciphertext: ");
 
