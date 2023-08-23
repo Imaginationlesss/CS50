@@ -62,11 +62,10 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf("cipertext: %s\n", cipertext);
+            printf("%c", plaintext);
             return 0;
         }
     }
-
     printf("cipertext: %s\n", cipertext);
     return 0;
 
