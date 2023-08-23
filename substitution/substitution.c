@@ -11,6 +11,11 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution KEY\n");
         return 1;
     }
+    else if(argv[1] == 0)
+    {
+        printf("Key must contain 26 characters\n");
+        return 1;
+    }
     //Receive input
     string plaintext = get_string("plaintext: ");
 
