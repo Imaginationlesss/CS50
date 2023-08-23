@@ -53,12 +53,17 @@ int main(int argc, string argv[])
         if (isupper(plaintext[i]))
         {
             difference += plaintext[i] - 65;
-            printf("%c", key[difference];
+            printf("%c", key[difference]);
         }
         else if (islower(plaintext[i]))
         {
             difference += plaintext[i] - 97;
-            printf("%c", key[difference];
+            printf("%c", key[difference] + 32);
+        }
+        else
+        {
+            printf("cipertext: %s\n", cipertext);
+            return 0;
         }
     }
 
