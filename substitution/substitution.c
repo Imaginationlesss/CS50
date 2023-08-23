@@ -6,7 +6,11 @@
 int main(int argc, string argv[])
 {
     //Check the key
-    if(argv[])
+    if(argv[1] == 0)
+    {
+        printf("Usage: ./substitution KEY\n");
+        return 1;
+    }
     //Receive input
     string plaintext = get_string("plaintext: ");
 
