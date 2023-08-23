@@ -8,7 +8,7 @@ int main(int argc, string argv[])
     string key = argv[1];
 
     // Check the key
-    if (key == 0)
+    if (key < 0 || key > 0)
     {
         printf("Usage: ./substitution KEY\n");
         return 1;
