@@ -46,8 +46,7 @@ int compute_score(string word)
             wordvalue += POINTS[word[i] - 65];
         }
 
-        if (is
-        lower(word[i]))
+        if (islower(word[i]))
         {
             wordvalue += POINTS[word[i] - 97];
         }

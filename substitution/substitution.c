@@ -44,11 +44,13 @@ int main(int argc, string argv[])
     //Receive input
     string plaintext = get_string ("plaintext: ");
 
+    string cipertext = 0;
+
     //Transform into cipertext
 
     for (int i = 0, n = strlen(plaintext); i < n; i++)
     {
-        
+        cipertext += key[i]
     }
 
 
