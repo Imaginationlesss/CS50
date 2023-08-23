@@ -32,7 +32,7 @@ int main(int argc, string argv[])
 
     for (int i = 0, n = strlen(key); i < n; i++)
     {
-        for (int j = i + 1; j < strlen(key); i++)
+        for (int j = i + 1; j < strlen(key); j++)
         {
             if (tolower(key[i]) == tolower(key[j]) || toupper(key[i]) == toupper(key[j]))
             {
