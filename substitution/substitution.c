@@ -34,7 +34,7 @@ int main(int argc, string argv[])
     {
         for (int j = i + 1; j < strlen(key); i++)
         {
-            if (key[i] == strlen(key[j])
+            if (key[i] == key[j])
             {
             printf ("Key must not contain repeated characters\n");
             return 1;
@@ -53,4 +53,5 @@ int main(int argc, string argv[])
         printf ("Text must contain alphabetic characters\n");
         return 1;
         }
+    }
 }
