@@ -14,7 +14,7 @@ int main(int argc, string argv[])
 
     for(int i = 0, n = strlen(argv[1]); i < n; i++)
     {
-        if(!isalpha)
+        if(!isalpha(argv[1]))
         {
 
         printf("Key must contain alphabetic characters\n");
