@@ -3,13 +3,51 @@
 #include <stdio.h>
 #include <string.h>
 
-
+int key_check(string key);
+int encryption(string key, string plaintext)
 
 int main(int argc, string argv[])
 {
     string key = argv[1];
+    int keycheck = key_check(key)
+    string plaintext = get_string("plaintext: ");;
+    int encrypt = encryption(key, plaintext)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Check the key
+int key_check(string key){
     if (argc != 2)
     {
         printf("Usage: ./substitution KEY\n");
@@ -42,11 +80,12 @@ int main(int argc, string argv[])
             }
         }
     }
+}
 
-    // Receive input
-    string plaintext = get_string("plaintext: ");
+
 
     // Transform into cipertext
+int encryption(string key, string plaintext){
     for (int i = 0, n = strlen(key); i < n; i++)
     {
         if (islower(key[i]))
@@ -77,6 +116,7 @@ int main(int argc, string argv[])
     }
     printf("\n");
     return 0;
+}
 
     // yukfrnlbavmwzteogxhcipjsqd
     // ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -84,4 +124,3 @@ int main(int argc, string argv[])
     // for each character in plaintext
     // find corresponding character in key
     // add corresponding character to ciphertext
-}
