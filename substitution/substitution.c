@@ -52,8 +52,8 @@ int main(int argc, string argv[])
     {
         if(isupper(plaintext[i]))
         {
-
-            cipertext += key[i];
+            int difference = plaintext[i] - 65;
+            cipertext += key[difference];
         }
     }
 
