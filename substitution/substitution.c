@@ -11,12 +11,12 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution KEY\n");
         return 1;
     }
-    else if(argv[1] != isalpha )
+    else if(argc != isalpha )
     {
         printf("Key must contain alphabetic characters\n");
         return 1;
     }
-    else if(argv[1] < 26 )
+    else if(argc < 26 )
     {
         printf("Key must contain 26 characters\n");
         return 1;
