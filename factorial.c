@@ -6,15 +6,12 @@
 typedef
 
 
-int factorial(int number)
+int factorial(int number);
 
 int mainc (void)
 {
     // Prompt use for number
     int number = get_int("Type a number ");
-
-
-
 }
 
 int factorial(int number)
@@ -24,5 +21,5 @@ int factorial(int number)
         return 1;
     }
 
-    return number * 
+    return number * number - 1
 }
