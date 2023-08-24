@@ -11,7 +11,7 @@ int factorial(int number)
 int mainc (void)
 {
     // Prompt use for number
-    int n = get_int("Type a number ");
+    int number = get_int("Type a number ");
 
 
 
@@ -23,4 +23,6 @@ int factorial(int number)
     {
         return 1;
     }
+
+    return number * 
 }
