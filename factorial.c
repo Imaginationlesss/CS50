@@ -11,7 +11,8 @@ int factorial(int number);
 int mainc (void)
 {
     // Prompt use for number
-    int number = get_int("Type a number ");
+    int n = get_int("Type a number ");
+    printf("%i\n", factorial(n));
 }
 
 int factorial(int number)
