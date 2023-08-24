@@ -3,7 +3,7 @@
 
 int factorial(int number);
 
-int mainc (void)
+int main (void)
 {
     // Prompt use for number
     int n = get_int("Type a number ");
