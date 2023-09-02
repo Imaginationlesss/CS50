@@ -37,7 +37,7 @@ int convert(string input)
 
     int converted = lastdgt - '0';
 
-    lastdgt = '\0';
+    input[num_length - 1] = '\0';
 
     return converted = lastdgt + 10 * convert(input);
 }
