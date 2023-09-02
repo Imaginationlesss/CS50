@@ -65,11 +65,13 @@ void sort_cities(void)
     // Add your code here
     int count = NUM_CITIES;
 
+    avg_temp temps;
+
     for (int i = 0; i < count; i++)
     {
         for (int j = 0; j < count-i-1; j++)
         {
-
+            if()
         }
     }
 
