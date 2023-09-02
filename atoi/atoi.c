@@ -39,5 +39,5 @@ int convert(string input)
 
     input[num_length - 1] = '\0';
 
-    return converted = lastdgt + (10 * convert(input));
+    return converted + (10 * convert(input));
 }
