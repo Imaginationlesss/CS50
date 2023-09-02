@@ -28,17 +28,16 @@ int convert(string input)
     // TODO
     int num_length = strlen(input);
 
-    if(num_length == 1)
+    if (num_length == 1)
     {
-        return input[0] - 48;
+        return input[0] - '0';
     }
 
     char lastdgt = input[num_length - 1];
 
-    int converted = lastdgt - 48;
+    int converted = lastdgt - '0';
 
-    lastdgt = '\0'
+    lastdgt = '\0';
 
-    return converted = lastdgt + 10 *
-
+    return converted = lastdgt + 10 * convert(input);
 }
