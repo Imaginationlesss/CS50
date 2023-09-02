@@ -72,10 +72,11 @@ void sort_cities(void)
         for (int j = 0; j < count-i-1; j++)
         {
             if(temps[j].temp < temps[j+1].temp)
+            {
             temperatura = temps[j];
             temps[j] = temps[ j + 1 ];
             temps[ j + 1 ] = temperatura;
+            }
         }
     }
-
 }
