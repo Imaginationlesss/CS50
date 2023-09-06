@@ -11,4 +11,5 @@ sort3 uses: TODO
 How do you know?: TODO
 
 
-test 1: 
+test 1: s1 s5 = 0.018s
+        s2 s5
