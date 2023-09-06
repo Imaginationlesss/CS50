@@ -69,7 +69,7 @@ bool vote(string name)
     // TODO
     for (int i = 0; i < voter_count; i++)
     {
-        if (strcasecomp(vote, candidate[i].name))
+        if (strcasecomp(vote, candidate[i].name == 0))
         {
             candidate[i].votes++
         }
