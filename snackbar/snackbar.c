@@ -23,7 +23,7 @@
 
 // Number of menu items
 // Adjust this value (10) to number of items input below
-#define NUM_ITEMS 4
+#define NUM_ITEMS 10
 
 // Menu itmes have item name and price
 typedef struct
@@ -111,8 +111,13 @@ float get_cost(string item)
 {
     for (int i = 0; i < NUM_ITEMS; i++)
     {
-        if (strcasecmp(item, menu[i].item))
-        return 0;
+        if (strcasecmp(item, menu[i].item) == 0)
+        {
+            return menu[i].price;
+        }
+        else
+        {
+            return 0;
         }
     }
-    return menu[j].price;
+}
