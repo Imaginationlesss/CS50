@@ -67,14 +67,21 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
+    for (int i = 0; i < candidate; i++)
+    {
+        if (strcasecomp(vote, candidates[i].name))
+        {
+            
+        }
+        return false;
+    }
 
-    return false;
 }
 
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
     // TODO
-    
+
     return;
 }
