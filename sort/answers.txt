@@ -14,7 +14,7 @@ How do you know?: First of all it took the highest amount of time to sort alread
                   sorted linear sort needs to go over it the second time), second I just figured out what the other two sorts were so I was left with the linear.
                   But if we are gonna use our knowledge of the algorithms we know that linear and bubble sort need almost the same amount of time to sort, sometimes linear is even faster
                   we can see that it took second place twice which might get us thinking that maybe it's a bubble sort but as already mentioned test 3 just made things really clear when it showed
-                  that sort1 took almost 5 seconds to reverse all the numbers when sort 3 just took half of that time
+                  that sort1 took almost 5 seconds to reverse all the numbers when sort 3 just took half of that time.
 
 
 test 1: s1 s5k = 0.018s rt
@@ -29,4 +29,3 @@ test 3: s1 re50k = 4.747s rt
         s2 re50k = 0.364s rt
         s3 re50k = 2.487s rt
 
-        
