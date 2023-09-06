@@ -66,7 +66,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-N    for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if (strcmp(name, candidates[i].name) == 0)
         {
@@ -99,6 +99,6 @@ void print_winner(void)
                 printf("%s\n", candidates[j].name);
             }
         }
-        return;
     }
+    return;
 }
