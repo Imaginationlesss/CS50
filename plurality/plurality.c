@@ -67,13 +67,11 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-    int votes = 0;
-
-    for (int i = 0; i < candidate[MAX]; i++)
+    for (int i = 0; i < voter_count; i++)
     {
         if (strcasecomp(vote, candidate[i].name))
         {
-            candidate[i]votes
+            candidate[i].votes++
         }
         return false;
     }
