@@ -13,7 +13,8 @@ sort3 uses: Linear sort
 
 How do you know?: First of all it took the highest amount of time to sort already sorted numbers of 5,000 which is the smallest and simplest test we could test algorithms, second i just figured out
                   what the other two sorts were so i was left with the linear.
-                  But if we are gonna use our knowledge of the algorithms we can see that 
+                  But if we are gonna use our knowledge of the algorithms we can see that it took second place twice which might get us thinking that maybe it's a bubble sort but as already mentioned
+                  test 3 just made things really clear when it showed that sort1 took almost 5 seconds to reverse all the numbers when sort 3 just took half of that time 
 
 
 test 1: s1 s5k = 0.018s rt
