@@ -86,10 +86,10 @@ void add_items(void)
     menu[3].price = 7;
 
     menu[4].item = "Cheese Fries";
-    menu[4].price = 5;
+    menu[4].price = 6;
 
     menu[5].item = "Fries";
-    menu[5].price = 6;
+    menu[5].price = 5;
 
     menu[6].item = "Cold Pressed Juice";
     menu[6].price = 7;
