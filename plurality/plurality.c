@@ -73,8 +73,9 @@ bool vote(string name)
         {
             candidate[i].votes++
         }
-        return false;
+        return candidate[i].votes;
     }
+    return false;
 
 }
 
@@ -82,6 +83,13 @@ bool vote(string name)
 void print_winner(void)
 {
     // TODO
-
+    for (int i = 0; i < voter_count; i++)
+    {
+        if (candidate[i].votes > candidate[i + 1].votes)
+        {
+            
+            printf("%s,\n", candidate[i].name)
+        }
+    }
     return;
 }
