@@ -1,22 +1,26 @@
-sort1 uses:
+sort1 uses: Bubble sort algorithm
 
-How do you know?: TODO
+How do you know?: Even tho in test 2 it showed the highest time needed to sort the 10,000 randomized numbers is came first is first test where we "get lucky" and numbers were already sorted,
+                  plus in test three where I tested reversed numbers
 
-sort2 uses: merge 
+sort2 uses: Merge sort algorithm
 
-How do you know?: TODO
+How do you know?: It showed the lowest real time used to sort the list of randomized numbers of 10,000 which merge algorithm is really known for, which we also saw in the video time lapse the end
+                  of the lecture.
 
 sort3 uses: TODO
 
 How do you know?: TODO
 
 
-test 1: s1 s5k = 0.018s r
-        s2 s5k= 0.036s r
-        s3 s5k = 0.063 r
+test 1: s1 s5k = 0.018s rt
+        s2 s5k= 0.036s rt
+        s3 s5k = 0.063 rt
 
-test 2: s1 r10k = 0.184s
-        s2 r10k = 0.073s
-        s3 r10k = 0.122s
+test 2: s1 ra10k = 0.184s rt
+        s2 ra10k = 0.073s rt
+        s3 ra10k = 0.122s rt
 
-test 3
+test 3: s1 re50k = 4.747s rt
+        s2 re50k = 0.364s rt
+        s3 re50k = 2.487s rt
