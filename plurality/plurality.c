@@ -89,7 +89,6 @@ void print_winner(void)
         {
             winner_vote = candidate[i].votes
             printf("%s,\n", candidate[i].name)
-                if(winner vote = )
         }
     }
     return;
