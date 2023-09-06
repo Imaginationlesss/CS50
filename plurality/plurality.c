@@ -10,8 +10,7 @@ typedef struct
 {
     string name;
     int votes;
-}
-candidate;
+} candidate;
 
 // Array of candidates
 candidate candidates[MAX];
@@ -90,13 +89,13 @@ void print_winner(void)
             winner_vote = candidates[i].votes;
         }
 
-    for (int j = 0; j < candidate_count; j++)
-    {
-        if (winner_vote == candidates[i].votes)
+        for (int j = 0; j < candidate_count; j++)
         {
-            printf("%s\n", candidates[i].name);
+            if (winner_vote == candidates[i].votes)
+            {
+                printf("%s\n", candidates[i].name);
+            }
+            return;
         }
-        return;
-    }
     }
 }
