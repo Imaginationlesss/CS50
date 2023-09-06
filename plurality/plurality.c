@@ -67,7 +67,7 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     // TODO
-        if (strcasecomp(vote(name), candidate[i].name == 0))
+        if (strcasecmp(vote(name), candidate[i].name == 0))
         {
             candidate[i].votes++
         }
