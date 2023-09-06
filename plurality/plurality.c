@@ -91,9 +91,9 @@ void print_winner(void)
 
         for (int j = 0; j < candidate_count; j++)
         {
-            if (candidates[i].votes == winner_vote)
+            if (candidates[j].votes == winner_vote)
             {
-                printf("%s\n", candidates[i].name);
+                printf("%s\n", candidates[j].name);
             }
             return;
         }
