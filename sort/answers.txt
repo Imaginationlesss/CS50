@@ -11,7 +11,9 @@ How do you know?: It showed the lowest real time used to sort the list of random
 
 sort3 uses: Linear sort
 
-How do you know?: First of all it took the highest amount of time to sort already sorted 
+How do you know?: First of all it took the highest amount of time to sort already sorted numbers of 5,000 which is the smallest and simplest test we could test algorithms, second i just figured out
+                  what the other two sorts were so i was left with the linear.
+                  But if we are gonna use our knowledge of the algorithms we can see that 
 
 
 test 1: s1 s5k = 0.018s rt
