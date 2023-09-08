@@ -146,9 +146,13 @@ bool vote(int voter, int rank, string name)
 void tabulate(void)
 {
     // TODO
-    if (eliminatret == true)
+    if (eliminated == true)
     {
-
+        candidates[i].votes += preferences[voter][rank + 1]
+    }
+    else
+    {
+        candidates[i].votes += preferences[voter][rank]
     }
     return;
 }
