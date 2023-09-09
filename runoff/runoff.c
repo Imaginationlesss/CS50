@@ -167,9 +167,8 @@ bool print_winner(void)
     if (candidates[preferences[i][j]] > winner_vote)
     {
         printf("%s\n", candidates[preferences[i][j]].name);
+        return true;
     }
-
-
     return false;
 }
 
