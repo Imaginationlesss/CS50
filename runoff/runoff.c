@@ -166,9 +166,9 @@ bool print_winner(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[preferences[i][j]] > winner_vote)
+        if (candidates[i].votes > winner_vote)
         {
-            printf("%s\n", candidates[preferences[i][j]].name);
+            printf("%s\n", candidates[i].name);
             return true;
         }
     }
