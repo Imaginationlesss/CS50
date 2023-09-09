@@ -164,9 +164,12 @@ bool print_winner(void)
     // TODO
     int winner_vote = voter_count/2;
 
-    if ()
+    if (candidates[preferences[i][j]] > winner_vote)
+    {
+        printf("%s\n", candidates[preferences[i][j]].name);
+    }
 
-    printf("%s\n", winner_vote)
+
     return false;
 }
 
