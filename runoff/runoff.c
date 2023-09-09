@@ -218,11 +218,12 @@ bool is_tie(int min)
 void eliminate(int min)
 {
     // TODO
-    (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].votes == min && candidate[i].eliminated == false)
         {
             candidate[i].eliminated = true;
         }
     return;
+    }
 }
