@@ -180,13 +180,14 @@ int find_min(void)
 {
     // TODO
     int min = voter_count;
-     for (int i = 0; i < candidate_count; i++)
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].eliminated == false && candidates[i].votes < min)
         {
-            if (candidates[i].eliminated == false && candidates[i].votes < min)
-            {
-                min = candidates[i].votes;
-            }
-    return min;
+            min = candidates[i].votes;
+        }
+        return min;
+    }
 }
 
 // Return true if the election is tied between all candidates, false otherwise
