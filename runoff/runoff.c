@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -15,8 +15,7 @@ typedef struct
     string name;
     int votes;
     bool eliminated;
-}
-candidate;
+} candidate;
 
 // Array of candidates
 candidate candidates[MAX_CANDIDATES];
@@ -131,13 +130,12 @@ bool vote(int voter, int rank, string name)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        if (strcmp (name, candidates[i].name) == 0)
+        if (strcmp(name, candidates[i].name) == 0)
         {
             candidates[i].votes++;
             preferences[voter][rank] = i;
             return true;
         }
-
     }
     return false;
 }
@@ -162,7 +160,7 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
-    int winner_vote = voter_count/2;
+    int winner_vote = voter_count / 2;
 
     for (int i = 0; i < candidate_count; i++)
     {
@@ -186,8 +184,8 @@ int find_min(void)
         {
             min = candidates[i].votes;
         }
-        return min;
     }
+    return min;
 }
 
 // Return true if the election is tied between all candidates, false otherwise
@@ -221,10 +219,10 @@ void eliminate(int min)
     // TODO
     for (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes == min && candidate[i].eliminated == false)
+        if (candidates[i].votes == min && candidates[i].eliminated == false)
         {
-            candidate[i].eliminated = true;
+            candidates[i].eliminated = true;
         }
-    return;
+        return;
     }
 }
