@@ -209,7 +209,7 @@ bool is_tie(int min)
     }
     if (remaining == min_voted)
     {
-        return true
+        return true;
     }
     return false;
 }
