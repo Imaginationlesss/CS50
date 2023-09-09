@@ -180,11 +180,11 @@ int find_min(void)
 {
     // TODO
     int min = voter_count;
-     for (int j = 0; j < candidate_count; j++)
+     for (int i = 0; i < candidate_count; i++)
         {
             if (candidates[i].eliminated == false && candidates[i].votes < min)
             {
-                min_votes = candidates[i].votes;
+                min = candidates[i].votes;
             }
     return min;
 }
@@ -220,9 +220,9 @@ void eliminate(int min)
     // TODO
     (int i = 0; i < candidate_count; i++)
     {
-        if (candidates[i].votes <= min)
+        if (candidates[i].votes == min && candidate[i].eliminated == false)
         {
-            candidate[i].eliminated = true
+            candidate[i].eliminated = true;
         }
     return;
 }
