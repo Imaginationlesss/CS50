@@ -162,6 +162,11 @@ void tabulate(void)
 bool print_winner(void)
 {
     // TODO
+    int winner_vote = voter_count/2;
+
+    if ()
+
+    printf("%s\n", winner_vote)
     return false;
 }
 
