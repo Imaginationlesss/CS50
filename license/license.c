@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
     int idx = 0;
 
-    while (fread(buffer, 1, 7, infile) == 7)
+    while (fread(buffer, 1, 8, infile) == 8)
     {
         // Replace '\n' with '\0'
         buffer[6] = '\0';
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         idx++;
     }
 
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 7; i++)
     {
         printf("%s\n", plates[i]);
     }
