@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     char *buffer[7];
 
     // Create array to store plate numbers
-    char *plates[8];
+    char *plates[7];
 
     FILE *infile = fopen(argv[1], "r");
 
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     while (fread(buffer, 1, 8, infile) == 8)
     {
         // Replace '\n' with '\0'
-        buffer[8] = '\0';
+        buffer[7] = '\0';
 
         // Save plate number in array
         plates[idx] = buffer;
