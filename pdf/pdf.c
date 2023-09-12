@@ -28,7 +28,10 @@ int main(int argc, string argv[])
         if(buffer[i] != signature[i])
         {
             printf("Likely not a pdf.");
-            return 1
+            return 0;
         }
     }
+    printf("Likely a pdf");
+    return 0;
+    printf("%i\n", buffer[i]);
 }
