@@ -12,5 +12,12 @@ int main(int argc, string argv[])
 
     FILE *input = fopen (argv[1], "r");
 
-    
+    if (file == NULL)
+    {
+        printf("No such file found.\n");
+        return 1;
+    }
+
+    uint8_t = 
+
 }
