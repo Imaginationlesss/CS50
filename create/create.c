@@ -22,4 +22,6 @@ int main(int argc, char *argv[])
     FILE *new_file = fopen(filename, "w");
 
     fclose(filename);
+    free(filename);
+    return 0;
 }
