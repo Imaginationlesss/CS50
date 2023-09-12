@@ -19,12 +19,16 @@ int main(int argc, string argv[])
     }
 
     uint8_t buffer[4];
+    uint8_t signature[] = {37, 80, 68, 70};
 
     fread(buffer, 1, 4, input);
 
     for (int i = 0; i < 4; i++)
     {
-        printf("%i\n", buffer[i]);
+        if(buffer[i] != signature[i])
+        {
+            printf("Likely not a pdf.");
+            return 1
+        }
     }
-
 }
