@@ -69,12 +69,12 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    RGBTRIPLE tempic[height][width];
 
      for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
-            RGBTRIPLE pic2[height][width];
             tempic[i][j] = image[i][j];
         }
     }
@@ -109,14 +109,14 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     }
                 }
                 tempic[i][j].rgbtRed = round((float)theRed / counter);
-                tempic[i][j].rgbtBlue = round((float)theblue / counter);
+                tempic[i][j].rgbtBlue = round((float)theBlue / counter);
                 tempic[i][j].rgbtGreen = round((float)theGreen / counter);
             }
         }
 
         for (int i = 0; i < height; i++)
         {
-            for (int j = 0; width; j++)
+            for (int j = 0; j < width; j++)
             {
                 tempic[i][j] = image[i][j];
             }
