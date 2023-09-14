@@ -109,7 +109,18 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 }
             }
 
-            
+            pic2[i][j].rgbtRed = round(theRed / counter)
+            pic2[i][j].rgbtBlue = round(theblue / counter)
+            pic2[i][j].rgbtGreen = round(theGreen / counter)
+
+        }
+
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; width; j++)
+            {
+                pic2[i][j]
+            }
         }
 
 
