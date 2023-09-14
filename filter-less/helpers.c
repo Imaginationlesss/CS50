@@ -100,14 +100,14 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     int theX = i + x;
                     int theY = j + y;
 
-                    if (theX < 0 || theX > height || theY < 0 || theY > width)
+                    if (theX < 0 || theX >= height || theY < 0 || theY >= width)
                     {
                         continue;
                     }
 
-                    theRed += theX.image[i][j].rgbtRed + theY.image[i][j].rgbtRed;
-                    theBlue += theX.image[i][j].rgbtBlue + theY.image[i][j].rgbtBlue;
-                    theGreen += theX.image[i][j].rgbt.Green + theY.image[i][j].rgbtGreen;
+                    theRed += image[theX][theY].rgbtRed;
+                    theBlue += image[theX][theY].rgbtBlue;
+                    theGreen += image[theX][theY].rgbt.Green;
 
                     counter++;
                 }
