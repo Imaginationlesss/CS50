@@ -107,10 +107,10 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
                         counter++;
                     }
-                    pic2[i][j].rgbtRed = round((float)theRed / counter);
-                    pic2[i][j].rgbtBlue = round((float)theblue / counter);
-                    pic2[i][j].rgbtGreen = round((float)theGreen / counter);
                 }
+                pic2[i][j].rgbtRed = round((float)theRed / counter);
+                pic2[i][j].rgbtBlue = round((float)theblue / counter);
+                pic2[i][j].rgbtGreen = round((float)theGreen / counter);
             }
         }
 
