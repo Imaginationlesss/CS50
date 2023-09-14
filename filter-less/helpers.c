@@ -108,8 +108,10 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     theGreen += theX.image[i][j].rgbt.Green + theY.image[i][j].rgbtGreen;
                 }
             }
+
+            
         }
 
 
-        
+
 }
