@@ -4,7 +4,7 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    for (int i = 0; i < height; i ++)
+    for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
@@ -20,23 +20,25 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
 
-
     for (int i = 0; i < height; i++)
     {
-        for(int j = 0; j < width; j++)
+        for (int j = 0; j < width; j++)
         {
             int sepiaRed = .393 * image[i][j].rgbtRed + .769 * image[i][j].rgbtBlue + .189 * image[i][j].rgbtGreen;
             int sepiaGreen = .349 * image[i][j].rgbtRed + .686 * image[i][j].rgbtBlue + .168 * image[i][j].rgbtGreen;
             int sepiaBlue = .272 * image[i][j].rgbtRed + .534 * image[i][j].rgbtBlue + .131 * image[i][j].rgbtGreen;
 
-            if (sepiaRed > 255){
+            if (sepiaRed > 255)
+            {
                 sepiaRed = 255;
             }
 
-            if (sepiaBlue > 255){
+            if (sepiaBlue > 255)
+            {
                 sepiaBlue = 255;
             }
-            if (sepiaGreen > 255){
+            if (sepiaGreen > 255)
+            {
                 sepiaGreen = 255;
             }
 
@@ -71,7 +73,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE tempic[height][width];
 
-     for (int i = 0; i < height; i++)
+    for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
@@ -79,47 +81,47 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 
-        for (int i = 0; i < height; i++)
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
         {
-            for (int j = 0; j < width; j++)
-            {
-                int theRed;
-                int theBlue;
-                int theGreen;
-                theRed = theBlue = theGreen = 0;
-                int counter = 0;
+            int theRed;
+            int theBlue;
+            int theGreen;
+            theRed = theBlue = theGreen = 0;
+            int counter = 0;
 
             for (int x = -1; x < 2; x++)
-                {
-                    for (int y = -1; y < 2; y++)
-                    {
-                        int theX = i + x;
-                        int theY = j + y;
-
-                        if (theX < 0 || theX >= height || theY < 0 || theY >= width)
-                        {
-                            continue;
-                        }
-
-                        theRed += image[theX][theY].rgbtRed;
-                        theBlue += image[theX][theY].rgbtBlue;
-                        theGreen += image[theX][theY].rgbtGreen;
-
-                        counter++;
-                    }
-                }
-                tempic[i][j].rgbtRed = round((float)theRed / counter);
-                tempic[i][j].rgbtBlue = round((float)theBlue / counter);
-                tempic[i][j].rgbtGreen = round((float)theGreen / counter);
-            }
-        }
-
-        for (int i = 0; i < height; i++)
-        {
-            for (int j = 0; j < width; j++)
             {
-                tempic[i][j] = image[i][j];
+                for (int y = -1; y < 2; y++)
+                {
+                    int theX = i + x;
+                    int theY = j + y;
+
+                    if (theX < 0 || theX >= height || theY < 0 || theY >= width)
+                    {
+                        continue;
+                    }
+
+                    theRed += image[theX][theY].rgbtRed;
+                    theBlue += image[theX][theY].rgbtBlue;
+                    theGreen += image[theX][theY].rgbtGreen;
+
+                    counter++;
+                }
             }
+            tempic[i][j].rgbtRed = round((float) theRed / counter);
+            tempic[i][j].rgbtBlue = round((float) theBlue / counter);
+            tempic[i][j].rgbtGreen = round((float) theGreen / counter);
         }
-        return;
+    }
+
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            tempic[i][j] = image[i][j];
+        }
+    }
+    return;
 }
