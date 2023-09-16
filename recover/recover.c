@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
             output_file = fopen(outp, "w")
             }
             image_counter++;
+            fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, outp)
         }
         else
         {
