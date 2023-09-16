@@ -52,6 +52,7 @@ int main(int argc, char *argv[])
 
 
             FILE *output_file = NULL;
+            char *output[8];
             sprintf(output, "%03i.jpg", image_counter);
             output_file = fopen(output, "w")
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file)
