@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
         return 1;
     }
     // Open the file
-    
-    FILE *input_file = fopen(argv[1], "r");
+    char *card = argv[1];
+    FILE *input_file = fopen(card, "r");
     if (input_file == NULL)
     {
         printf("Could not open\n");
