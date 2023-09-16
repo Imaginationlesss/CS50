@@ -10,7 +10,6 @@ bool found_jpg = false;
 
 int image_counter = 0;
 BYTE buffer[BLOCK_SIZE];
-FILE *output = NULL;
 FILE *output_file = NULL;
 
 
@@ -52,6 +51,8 @@ int main(int argc, char *argv[])
                 fclose(output_file);
             }
             image_counter++;
+
+            FILE *output = NULL;
             sprintf(output, "%03i.jpg", image_counter);
             output_file = fopen(output, "w")
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file)
