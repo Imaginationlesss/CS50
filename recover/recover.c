@@ -47,11 +47,11 @@ int main(int argc, char *argv[])
             char output[8];
             sprintf(output, "%03i.jpg", image_counter);
             output_file = fopen(output, "w");
+            if ()
+
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
             image_counter++;
-        }
-        else
-        {
+
             //keep writing
             if (!found_jpg)
             {
