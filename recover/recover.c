@@ -32,8 +32,11 @@ int main(int argc, char *argv[])
             {
                 first_jpg = true;
             }
+            else
+            {
             sprintf(outp, "%03i.jpg", image_counter);
             output_file = fopen(outp, "w")
+            }
             image_counter++;
         }
 
