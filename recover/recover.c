@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
     }
 
     //Open the file
-    FILE *input = fopen(argv[1], "r");
-    if (input == NULL)
+    FILE *input_file = fopen(argv[1], "r");
+    if (input_file == NULL)
     {
         printf("Could not open\n");
         return 1;
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
             }
             image_counter++;
 
-            FILE *output = NULL;
+            FILE *output_file = NULL;
             sprintf(output, "%03i.jpg", image_counter);
             output_file = fopen(output, "w")
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file)
