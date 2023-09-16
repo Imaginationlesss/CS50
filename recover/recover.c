@@ -7,12 +7,14 @@ typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
+    //Check the file
     if (argc != 2)
     {
         printf("Usage: ./recover IMAGE\n");
         return 1;
     }
 
+    //Open the file
     FILE *inp = fopen(argv[1], "r");
     if (inp == NULL)
     {
@@ -20,6 +22,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    //Read the file of 512bytes and store into buffer until the end of the card
     while (fread(buffer, 1, 512, card))
     {
 
