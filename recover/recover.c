@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
     {
         if (buffer[0] = 0xff && buffer[1] = 0xd8 && buffer[2] = 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
+            sprintf(outp, "%03i.jpg", image_counter);
             fwrite()
         }
 
@@ -41,7 +42,7 @@ int main(int argc, char *argv[])
 
     int image_counter = 0;
 
-    
+
     BYTE buffer[BLOCK_SIZE];
 
     FILE *outp = NULL;
