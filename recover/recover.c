@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 typedef uint8_t BYTE;
 #define BLOCK_SIZE 512
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
     FILE *input = fopen(argv[1], "r");
     if (input == NULL)
     {
-        printf("Could not open %s.\n", inp);
+        printf("Could not open %s.\n", input);
         return 1;
     }
 
