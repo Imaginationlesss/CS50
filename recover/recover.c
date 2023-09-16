@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     }
 
     FILE *card = fopen(argv[1], "r");
-    fread(buffer, 1, 512, card)
+    while (fread(buffer, 1, 512, card)
 
     buffer[] = 0;
 
