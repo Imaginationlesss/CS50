@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     // Open the file
+    
     FILE *input_file = fopen(argv[1], "r");
     if (input_file == NULL)
     {
