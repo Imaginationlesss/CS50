@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
             {
                 fclose(output_file);
             }
-            image_counter++;
+
 
             FILE *output_file = NULL;
             sprintf(output, "%03i.jpg", image_counter);
@@ -67,7 +67,8 @@ int main(int argc, char *argv[])
             }
         }
     }
-    fclose(output);
+    fclose(input_file);
+    fclose(output_file);
     return 0;
 
 }
