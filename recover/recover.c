@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-typedef uint8_t BYTE
+
+typedef uint8_t BYTE;
 #define BLOCK_SIZE 512
 
 int main(int argc, char *argv[])
