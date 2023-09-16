@@ -1,7 +1,7 @@
+#include <stdbool.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
-#include <stdbool.h>
 
 typedef uint8_t BYTE;
 #define BLOCK_SIZE 512
@@ -11,17 +11,16 @@ bool found_jpg = false;
 int image_counter = 0;
 BYTE buffer[BLOCK_SIZE];
 
-
 int main(int argc, char *argv[])
 {
-    //Check the file
+    // Check the file
     if (argc != 2)
     {
         printf("Usage: ./recover IMAGE\n");
         return 1;
     }
 
-    //Open the file
+    // Open the file
     FILE *input_file = fopen(argv[1], "r");
     if (input_file == NULL)
     {
@@ -29,7 +28,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    //Read the file of 512bytes and store into buffer until the end of the card
+    // Read the file of 512bytes and store into buffer until the end of the card
     int read_bytes;
     FILE *output_file = NULL;
     while ((read_bytes = fread(buffer, sizeof(BYTE), BLOCK_SIZE, input_file)) != 0)
@@ -54,7 +53,7 @@ int main(int argc, char *argv[])
                 return 2;
             }
             image_counter++;
-            //keep writing
+            // keep writing
             if (!found_jpg)
             {
                 found_jpg = true;
