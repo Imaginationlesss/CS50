@@ -40,7 +40,9 @@ int main(int argc, char *argv[])
     return 0;
 
     int image_counter = 0;
-    uint8_t buffer[BLOCK_SIZE];
+
+    
+    BYTE buffer[BLOCK_SIZE];
 
     FILE *outp = NULL;
 
