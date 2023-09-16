@@ -32,7 +32,6 @@ int main(int argc, char *argv[])
     //Read the file of 512bytes and store into buffer until the end of the card
     while (fread(buffer, sizeof(BYTE), BLOCK_SIZE, input_file))
     {
-
         int read_bytes = fread(buffer, sizeof(BYTE), BLOCK_SIZE, input_file);
         if (read_bytes == 0)
         {
@@ -49,8 +48,6 @@ int main(int argc, char *argv[])
             {
                 fclose(input_file);
             }
-
-
             FILE *output_file = NULL;
             char *output = 0;
             sprintf(output, "%03i.jpg", image_counter);
@@ -64,11 +61,10 @@ int main(int argc, char *argv[])
             if (!found_jpg)
             {
                 found_jpg = true;
-                fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
+                fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, input_file);
             }
         }
     }
-    fclose(output_file);
+    fclose(input_file);
     return 0;
-
 }
