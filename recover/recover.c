@@ -47,11 +47,13 @@ int main(int argc, char *argv[])
             char output[8];
             sprintf(output, "%03i.jpg", image_counter);
             output_file = fopen(output, "w");
-            if ()
-
-            fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
+            if (output_file == NULL)
+            {
+                fclose(input_file)
+                printf("Could not create the file");
+                return 2;
+            }
             image_counter++;
-
             //keep writing
             if (!found_jpg)
             {
