@@ -34,12 +34,11 @@ int main(int argc, char *argv[])
         {
             if (found_jpg)
             {
-                
+                fclose(output_file);
             }
             else
             {
                 found_jpg = true;
-
             }
             char output[8];
             sprintf(output, "%03i.jpg", image_counter);
