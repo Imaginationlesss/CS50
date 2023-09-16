@@ -34,12 +34,12 @@ int main(int argc, char *argv[])
             }
             else
             {
-                fclose(outp);
+                fclose(output_file);
             }
             image_counter++;
             sprintf(outp, "%03i.jpg", image_counter);
             output_file = fopen(outp, "w")
-            fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, outp)
+            fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file)
         }
         else
         {
