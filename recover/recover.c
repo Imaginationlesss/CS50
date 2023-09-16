@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    FILE *card = fopen()
+    FILE *card = fopen(argv[1], "r");
+    fread(buffer, 1, )
 
 }
