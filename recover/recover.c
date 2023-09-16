@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
         printf("Usage: ./recover IMAGE\n");
         return 1;
     }
-
     // Open the file
     FILE *input_file = fopen(argv[1], "r");
     if (input_file == NULL)
@@ -27,9 +26,7 @@ int main(int argc, char *argv[])
         printf("Could not open\n");
         return 1;
     }
-
     // Read the file of 512bytes and store into buffer until the end of the card
-    int read_bytes;
     FILE *output_file = NULL;
     while ((read_bytes = fread(buffer, sizeof(BYTE), BLOCK_SIZE, input_file)) != 0)
     {
