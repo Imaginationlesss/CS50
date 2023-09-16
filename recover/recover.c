@@ -55,8 +55,9 @@ int main(int argc, char *argv[])
             image_counter++;
         }
         // keep writing
-        if (found_jpg)
+        if (!found_jpg)
         {
+            found_jpg = true;
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
         }
     }
