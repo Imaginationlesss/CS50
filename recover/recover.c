@@ -42,4 +42,6 @@ int main(int argc, char *argv[])
     int image_counter = 0;
     uint8_t buffer[BLOCK_SIZE];
 
+    FILE *outp = NULL;
+
 }
