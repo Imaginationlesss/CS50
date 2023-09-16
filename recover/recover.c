@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
         printf("Incorect usage!\n");
         return 1;
     }
-    1
+
+    FILE *card = fopen()
 
 }
