@@ -10,8 +10,17 @@ int main(int argc, char *argv[])
     }
 
     FILE *card = fopen(argv[1], "r");
-    while (fread(buffer, 1, 512, card)
+    if (card == NULL)
+    {
+        printf("Could not open %s.\n", );
+        return 2;
+    }
 
-    buffer[] = 0;
+    while (fread(buffer, 1, 512, card))
+    {
+
+    }
+
+    char *buffer[512];
 
 }
