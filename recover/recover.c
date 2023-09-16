@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
             output_file = fopen(output, "w");
             if (output_file == NULL)
             {
-                fclose(input_file)
+                fclose(input_file);
                 printf("Could not create the file");
                 return 2;
             }
