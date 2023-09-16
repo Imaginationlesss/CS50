@@ -3,6 +3,11 @@
 
 int main(int argc, char *argv[])
 {
-    if (argv[1] != )
+    if (argc != 2)
+    {
+        printf("Incorect usage!\n");
+        return 1;
+    }
+    1
 
 }
