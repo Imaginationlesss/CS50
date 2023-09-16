@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    FILE *card = fopen(argv[1], "r");
-    if (card == NULL)
+    FILE *inp = fopen(argv[1], "r");
+    if (inp == NULL)
     {
-        printf("Could not open %s.\n", );
-        return 2;
+        printf("Could not open %s.\n", inp);
+        return 1;
     }
 
     while (fread(buffer, 1, 512, card))
@@ -26,6 +26,6 @@ int main(int argc, char *argv[])
     }
 
     int image_counter = 0;
-    char *buffer[512];
+    char *buffer[BLOCK_SIZE];
 
 }
