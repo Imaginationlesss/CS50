@@ -10,7 +10,7 @@ bool found_jpg = false;
 
 int image_counter = 0;
 BYTE buffer[BLOCK_SIZE];
-FILE *outp = NULL;
+FILE *output = NULL;
 
 
 int main(int argc, char *argv[])
@@ -34,13 +34,13 @@ int main(int argc, char *argv[])
     while (fread(buffer, sizeof(BYTE), BLOCK_SIZE, input))
     {
 
-        read_bytes = fread(buffer, sizeof(BYTE), BLOCK_SIZE, inp)
+        int read_bytes = fread(buffer, sizeof(BYTE), BLOCK_SIZE, input);
         if (read_bytes == 0)
         {
             break;
         }
 
-        if (buffer[0] = 0xff && buffer[1] = 0xd8 && buffer[2] = 0xff && (buffer[3] & 0xf0) == 0xe0)
+        if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
         {
             if (!first_jpg)
             {
