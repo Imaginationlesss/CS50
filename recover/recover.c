@@ -59,7 +59,10 @@ int main(int argc, char *argv[])
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
         }
     }
-    fclose(input_file);
+    if (found_jpg)
+    {
     fclose(output_file);
+    }
+    fclose(input_file);
     return 0;
 }
