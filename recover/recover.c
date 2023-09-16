@@ -39,12 +39,10 @@ int main(int argc, char *argv[])
             }
             image_counter++;
         }
-
-
-
-
-
-
+        else
+        {
+            //keep writing
+        }
 
     }
     return 0;
