@@ -11,6 +11,7 @@ bool found_jpg = false;
 int image_counter = 0;
 BYTE buffer[BLOCK_SIZE];
 FILE *output = NULL;
+FILE *output_file;
 
 
 int main(int argc, char *argv[])
