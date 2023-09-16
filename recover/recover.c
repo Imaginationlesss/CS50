@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
             }
             char output[8];
             sprintf(output, "%03i.jpg", image_counter);
-            output_file = fopen(output, "w");
+            output_file = fopen(output, "a");
             if (output_file == NULL)
             {
                 fclose(input_file);
