@@ -53,11 +53,11 @@ int main(int argc, char *argv[])
                 return 2;
             }
             image_counter++;
-            // keep writing
-            if (found_jpg)
-            {
-                fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
-            }
+        }
+        // keep writing
+        if (found_jpg)
+        {
+            fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
         }
     }
     fclose(input_file);
