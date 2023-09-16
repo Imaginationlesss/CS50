@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
             else
             {
                 found_jpg = true;
+                fclose(output_file);
             }
             char output[8];
             sprintf(output, "%03i.jpg", image_counter);
