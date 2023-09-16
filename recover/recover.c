@@ -26,6 +26,6 @@ int main(int argc, char *argv[])
     }
 
     int image_counter = 0;
-    char *buffer[BLOCK_SIZE];
+    uint8_t buffer[BLOCK_SIZE];
 
 }
