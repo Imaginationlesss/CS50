@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
             if (!first_jpg)
             {
                 first_jpg = true;
+                found_jpg = true;
             }
             else
             {
