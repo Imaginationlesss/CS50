@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                fclose(input_file);
+                fclose(output_file);
             }
             FILE *output_file = NULL;
             char *output = 0;
