@@ -25,7 +25,10 @@ int main(int argc, char *argv[])
     //Read the file of 512bytes and store into buffer until the end of the card
     while (fread(buffer, 1, 512, inp))
     {
-        if (buffer[0] = 0xff && buffer[1] = 0xd8 && buffer[3] = 0xff && buffer[4])
+        if (buffer[0] = 0xff && buffer[1] = 0xd8 && buffer[2] = 0xff && (buffer[3] & 0xf0 == 0xe0))
+        {
+            fwrite()
+        }
 
 
 
