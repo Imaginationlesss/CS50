@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <bool
 
 typedef uint8_t BYTE;
 #define BLOCK_SIZE 512
 bool first_jpg = false;
+bool found_jpg = false;
 
 int main(int argc, char *argv[])
 {
@@ -16,8 +18,8 @@ int main(int argc, char *argv[])
     }
 
     //Open the file
-    FILE *inp = fopen(argv[1], "r");
-    if (inp == NULL)
+    FILE *input = fopen(argv[1], "r");
+    if (input == NULL)
     {
         printf("Could not open %s.\n", inp);
         return 1;
@@ -44,23 +46,24 @@ int main(int argc, char *argv[])
                 fclose(output_file);
             }
             image_counter++;
-            sprintf(outp, "%03i.jpg", image_counter);
-            output_file = fopen(outp, "w")
+            sprintf(output, "%03i.jpg", image_counter);
+            output_file = fopen(output, "w")
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file)
         }
         else
         {
             //keep writing
+            if (!found_jpg)
+            {
+                found_jpg = true;
+                fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
+            }
         }
-
     }
     return 0;
 
     int image_counter = 0;
-
-
     BYTE buffer[BLOCK_SIZE];
-
     FILE *outp = NULL;
 
 }
