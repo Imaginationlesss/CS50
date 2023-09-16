@@ -40,7 +40,6 @@ int main(int argc, char *argv[])
             else
             {
                 found_jpg = true;
-                fclose(output_file);
             }
             char output[8];
             sprintf(output, "%03i.jpg", image_counter);
@@ -57,6 +56,7 @@ int main(int argc, char *argv[])
         if (found_jpg)
         {
             fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
+            fclose(output_file);
         }
     }
     fclose(input_file);
