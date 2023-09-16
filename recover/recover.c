@@ -8,6 +8,11 @@ typedef uint8_t BYTE;
 bool first_jpg = false;
 bool found_jpg = false;
 
+int image_counter = 0;
+BYTE buffer[BLOCK_SIZE];
+FILE *outp = NULL;
+
+
 int main(int argc, char *argv[])
 {
     //Check the file
@@ -21,12 +26,12 @@ int main(int argc, char *argv[])
     FILE *input = fopen(argv[1], "r");
     if (input == NULL)
     {
-        printf("Could not open %s.\n", input);
+        printf("Could not open\n");
         return 1;
     }
 
     //Read the file of 512bytes and store into buffer until the end of the card
-    while (fread(buffer, sizeof(BYTE), BLOCK_SIZE, inp))
+    while (fread(buffer, sizeof(BYTE), BLOCK_SIZE, input))
     {
 
         read_bytes = fread(buffer, sizeof(BYTE), BLOCK_SIZE, inp)
@@ -61,9 +66,5 @@ int main(int argc, char *argv[])
         }
     }
     return 0;
-
-    int image_counter = 0;
-    BYTE buffer[BLOCK_SIZE];
-    FILE *outp = NULL;
 
 }
