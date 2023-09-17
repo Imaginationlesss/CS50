@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
             fwrite(buffer, BLOCK_SIZE, 1, output_file);
         }
     }
-    //Close the opened files so there's no leeks
+    // Close the opened files so there's no leeks
     fclose(input_file);
 
     if (found_jpg)
