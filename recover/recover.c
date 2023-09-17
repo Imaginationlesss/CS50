@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
         // keep writing
         if (found_jpg)
         {
-            fwrite(buffer, sizeof(BYTE), BLOCK_SIZE, output_file);
+            fwrite(buffer, BLOCK_SIZE, 1, output_file);
         }
     }
 
