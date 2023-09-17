@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
             output_file = fopen(output, "w");
             if (output_file == NULL)
             {
-                printf("Could not create the file%s\n", output)
+                printf("Could not create the file%s\n", output);
                 fclose(input_file);
                 return 2;
             }
@@ -66,6 +66,6 @@ int main(int argc, char *argv[])
     {
         fclose(output_file);
     }
-    
+
     return 0;
 }
