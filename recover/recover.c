@@ -9,7 +9,7 @@ typedef uint8_t BYTE;
 bool found_jpg = false;
 char output[8];
 int image_counter = 0;
-BYTE buffer[BLOCK_SIZE];
+uint8_t buffer[BLOCK_SIZE];
 
 int main(int argc, char *argv[])
 {
