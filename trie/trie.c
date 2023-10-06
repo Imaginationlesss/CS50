@@ -114,8 +114,8 @@ bool check(char* word)
 
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        int index = tolower(name) - 'a';
-        if (index < 0 || index => SIZE_OF_ALPHABET)
+        int index = tolower(name[i]) - 'a';
+        if (index < 0 || index >= SIZE_OF_ALPHABET)
         {
             return false;
         }
@@ -124,7 +124,7 @@ bool check(char* word)
             return false;
         }
 
-        cursor = cursos->children[index];
+        cursor = cursor->children[index];
     }
 
     return true;
