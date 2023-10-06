@@ -114,7 +114,7 @@ bool check(char* word)
 
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        int index = tolower(name[i]) - 'a';
+        int index = tolower(word[i]) - 'a';
         if (index < 0 || index >= SIZE_OF_ALPHABET)
         {
             return false;
