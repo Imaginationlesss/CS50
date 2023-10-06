@@ -112,7 +112,7 @@ bool check(char* word)
 {
     node *cursor = root;
 
-    for (int i = 0, n = strlen(word), i < n; i++)
+    for (int i = 0, n = strlen(word); i < n; i++)
     {
         int index = tolower(name) - 'a';
         if (index < 0 || index => SIZE_OF_ALPHABET)
