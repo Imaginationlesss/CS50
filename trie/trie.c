@@ -119,8 +119,15 @@ bool check(char* word)
         {
             return false;
         }
+        if (cursor->children[index] == NULL)
+        {
+            return false;
+        }
+
+        cursor = cursos->children[index];
     }
-    return false;
+
+    return true;
 }
 
 // Unload trie from memory
