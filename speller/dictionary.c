@@ -55,7 +55,7 @@ bool load(const char *dictionary)
             return 2;
         }
         strcpy(n->word. word);
-        hash
+        int hash
     }
 
 
