@@ -28,7 +28,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    noce *cursor = table[hashValue];
+    node *cursor = table[hashValue];
 
     while (cursor != NULL)
     {
@@ -104,5 +104,12 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
+    for (int i = 0; i < N; i++)
+    {
+
+    node *cursor = table[i];
+    node *tmp = cursor;
+    cursor = cursor->next;
+    free(cursor)
     return false;
 }
