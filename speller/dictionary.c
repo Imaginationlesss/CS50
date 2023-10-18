@@ -54,12 +54,14 @@ bool load(const char *dictionary)
         {
             return 2;
         }
-        strcpy(n->word. word);
-        int hash
+        strcpy(n->word, word);
+        int hashValue = hash(word);
+        n->next = table[hashValue];
+        table[hashValue] = 0;
+        wordcount++;
     }
-
-
-    return false;
+    fclose(file);
+    return 0;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
