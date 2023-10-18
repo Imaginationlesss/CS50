@@ -38,9 +38,10 @@ unsigned int hash(const char *word)
         return 1;
     }
 
+    hashAscii = 0;
     for (int i = 0; i < strlen(word); i++)
     {
-
+        hashAscii += hashAscii
     }
     return toupper(word[i]) - 'A';
 
