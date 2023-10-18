@@ -30,6 +30,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
+    hashValue = hash[word];
     node *cursor = table[hashValue];
 
     while (cursor != NULL)
@@ -97,7 +98,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    if (wordcount != 0)
+    if (wordcount > 0)
     {
         return wordcount;
     }
