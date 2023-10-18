@@ -43,9 +43,9 @@ unsigned int hash(const char *word)
     unsigned int hashAscii = 0;
     for (int i = 0; i < strlen(word); i++)
     {
-        hashAscii += (unsigned int)word[i];
+        hashAscii += tolower(word[i]);
     }
-    return hashAscii;
+    return hashAscii / N;
 
 }
 
