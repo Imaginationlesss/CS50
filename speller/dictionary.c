@@ -20,6 +20,7 @@ node;
 const unsigned int N = 26;
 
 unsigned int hashValue;
+unsigned int wordcount;
 
 
 // Hash table
@@ -34,7 +35,7 @@ bool check(const char *word)
     while (cursor != NULL)
     {
 
-        if (strcasecamp(word, cursor->word) == 0)
+        if (strcasecmp(word, cursor->word) == 0)
         {
             return true;
         }
@@ -69,7 +70,7 @@ bool load(const char *dictionary)
 
     if (file == NULL)
     {
-        printf("Could not open %s\n", dictionary)
+        printf("Could not open %s\n", dictionary);
         return 1;
     }
 
