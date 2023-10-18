@@ -118,7 +118,6 @@ bool unload(void)
             cursor = cursor->next;
             free(tmp);
         }
-        free(n);
     }
     return true;
 }
