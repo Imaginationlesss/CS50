@@ -28,9 +28,9 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    for (int i = 0; i < 0; i++)
+    for (int i = 0; i < ; i++)
     {
-        
+
     }
     strcasecamp
     return false;
