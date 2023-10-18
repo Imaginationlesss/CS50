@@ -118,10 +118,7 @@ bool unload(void)
             cursor = cursor->next;
             free(tmp);
         }
-        if (cursor == 0)
-        {
-            return true;
-        }
+        free(n);
     }
-    return false;
+    return true;
 }
