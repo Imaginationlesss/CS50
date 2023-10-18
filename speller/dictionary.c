@@ -28,6 +28,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
+    
     return false;
 }
 
@@ -84,6 +85,10 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
+    if (wordcount != 0)
+    {
+        return wordcount;
+    }
     return 0;
 }
 
