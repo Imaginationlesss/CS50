@@ -30,7 +30,7 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    hashValue = hash[word];
+    hashValue = hash(word);
     node *cursor = table[hashValue];
 
     while (cursor != NULL)
