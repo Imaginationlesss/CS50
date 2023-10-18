@@ -28,11 +28,15 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    for (int i = 0; i < ; i++)
+    noce *cursor = table[hashValue];
+
+    while (cursor != NULL)
     {
 
+    if (strcasecamp(word, cursor->word) == 0)
+    {
+        return true;
     }
-    strcasecamp
     return false;
 }
 
