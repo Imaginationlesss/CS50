@@ -34,9 +34,11 @@ bool check(const char *word)
     while (cursor != NULL)
     {
 
-    if (strcasecamp(word, cursor->word) == 0)
-    {
-        return true;
+        if (strcasecamp(word, cursor->word) == 0)
+        {
+            return true;
+        }
+        cursor = cursor->next;
     }
     return false;
 }
