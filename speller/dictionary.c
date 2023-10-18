@@ -90,6 +90,7 @@ bool load(const char *dictionary)
         wordcount++;
     }
     fclose(file);
+    free(n);
     return true;
 }
 
