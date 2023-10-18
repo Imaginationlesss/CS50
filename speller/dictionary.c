@@ -71,7 +71,7 @@ bool load(const char *dictionary)
     if (file == NULL)
     {
         printf("Could not open %s\n", dictionary);
-        return 1;
+        return false;
     }
 
     char word[LENGTH + 1];
@@ -81,7 +81,7 @@ bool load(const char *dictionary)
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
-            return 2;
+            return false;
         }
         strcpy(n->word, word);
         hashValue = hash(word);
