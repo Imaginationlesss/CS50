@@ -16,8 +16,8 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-    with open("2018m.csv") as fifamen:
-        file_reader = csv.DictReader(fifamen)
+    with open("2018m.csv") as FifaMen:
+        ReadFifaMen = csv.DictReader(FifaMen)
 
 
     counts = {}
