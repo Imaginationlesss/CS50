@@ -19,6 +19,7 @@ def main():
     with open("2018m.csv") as FifaMen:
         ReadFifaMen = csv.DictReader(FifaMen)
         for team in ReadFifaMen:
+            team['rating'] = int(team['rating'])
             teams.append(team)
 
 
@@ -56,7 +57,7 @@ def simulate_round(teams):
 def simulate_tournament(teams):
     """Simulate a tournament. Return name of winning team."""
     # TODO
-    
+
 
 
 if __name__ == "__main__":
