@@ -9,7 +9,6 @@ N = 1000
 
 
 def main():
-
     # Ensure correct usage
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
@@ -19,9 +18,8 @@ def main():
     with open("2018m.csv") as FifaMen:
         ReadFifaMen = csv.DictReader(FifaMen)
         for team in ReadFifaMen:
-            team['rating'] = int(team['rating'])
+            team["rating"] = int(team["rating"])
             teams.append(team)
-
 
     counts = {}
     # TODO: Simulate N tournaments and keep track of win counts
@@ -64,8 +62,7 @@ def simulate_tournament(teams):
     # TODO
     while len(teams) > 1:
         simulate_round(teams)
-    return teams[0]['team']
-
+    return teams[0]["team"]
 
 
 if __name__ == "__main__":
