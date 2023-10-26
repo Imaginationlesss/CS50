@@ -15,9 +15,9 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-    with open("2018m.csv") as FifaMen:
-        ReadFifaMen = csv.DictReader(FifaMen)
-        for team in ReadFifaMen:
+    with open("2018m.csv") as Fifa:
+        ReadFifa = csv.DictReader(Fifa)
+        for team in ReadFifa:
             team["rating"] = int(team["rating"])
             teams.append(team)
 
