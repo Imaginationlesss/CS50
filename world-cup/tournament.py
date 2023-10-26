@@ -15,7 +15,7 @@ def main():
 
     teams = []
     # TODO: Read teams into memory from file
-    with open("2018m.csv") as Fifa:
+    with open(filename) as Fifa:
         ReadFifa = csv.DictReader(Fifa)
         for team in ReadFifa:
             team["rating"] = int(team["rating"])
