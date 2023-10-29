@@ -1,4 +1,4 @@
 # TODO
 
-hello input("What's your name? ")
-if 
+hello input("What is your name? ")
+
