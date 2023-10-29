@@ -12,6 +12,7 @@ for i in range(height):
             print(" ")
         else:
             print("#")
+    print()
 
 
 
