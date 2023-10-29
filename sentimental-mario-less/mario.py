@@ -23,3 +23,4 @@ for i in range(height):
         else:
             print("#", end="")
     print()
+
