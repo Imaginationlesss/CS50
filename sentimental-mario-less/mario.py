@@ -3,8 +3,9 @@
 
 while True:
     height = int(input("Height: "))
-    if(height > 0 or height < 9):
-        return height
+    if(height < 1 or height > 8):
+        break
+    return height
 
 
 for i in range(height):
