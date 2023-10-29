@@ -1,7 +1,5 @@
 # TODO
 
-height = 0
-
 
 while True:
     height = int(input("Height: "))
