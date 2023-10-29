@@ -4,12 +4,12 @@ height = 0
 
 
 while True:
-    if (argv = 2):
-        height = int(input("Height: "))
-        if height >= 1 and height <= 8:
-            break
-        else:
-            print("Please write correct height between 1 and 8!")
+    
+    height = int(input("Height: "))
+    if height >= 1 and height <= 8:
+        break
+    else:
+        print("Please write correct height between 1 and 8!")
 
 
 for i in range(height):
