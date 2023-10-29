@@ -1,10 +1,13 @@
 # TODO
 
-height = int(input("Height: "))
-while(height < 1 or height > 8):
-    height = int(input("Height: "))
 
-for()
+while True:
+    height = int(input("Height: "))
+    if(height < 1 or height > 8):
+        break
+
+    
+for i in range(height):
     print("#" * height)
 
 
