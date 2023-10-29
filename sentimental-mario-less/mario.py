@@ -3,6 +3,8 @@
 
 while True:
     height = input("Height: ")
+    if len(height) == 0:
+        print("Please write correct height between 1 and 8!")
     try:
         height = int(height)
         if height >= 1 and height <= 8:
