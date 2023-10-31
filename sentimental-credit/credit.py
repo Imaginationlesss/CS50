@@ -9,7 +9,7 @@ def get_credit_card_number():
         if not card_number:
             break
 
-        if valid_card(credit_card_number):
+        if get_card_type(credit_card_number):
             card_type = get_card_type(credit_card_number)
             print(f"Card Type: {card_type}")
         else:
