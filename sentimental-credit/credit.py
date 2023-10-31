@@ -34,7 +34,7 @@ def get_credit_card_number():
             print(f"Card Type: {card_type}")
             break
         else:
-            print("Invalid credit card number")
+            print("INVALID")
 
 
 def get_card_type(credit_card_number):
