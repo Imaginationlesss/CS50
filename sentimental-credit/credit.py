@@ -9,4 +9,5 @@ while true:
         break
 
     if valid_card(credit_card_number):
-        card_type = 
+        card_type = get_card_type(credit_card_number)
+        print()
