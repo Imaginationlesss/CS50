@@ -1,3 +1,3 @@
 # TODO
 
-import cs50 get_
+import from cs50 get_int
