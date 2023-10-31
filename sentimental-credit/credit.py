@@ -1,10 +1,10 @@
 # TODO
 
-from cs50 import get_int
+from cs50 import get_string
 
 def get_credit_card_number():
-    while true:
-        credit_card_number = get_int("Enter credit card number:")
+    while True:
+        credit_card_number = get_string("Enter credit card number:")
 
         if not card_number:
             break
