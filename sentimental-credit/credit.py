@@ -2,6 +2,7 @@
 
 from cs50 import get_string
 
+
 def get_credit_card_number():
     while True:
         credit_card_number = get_string("Enter credit card number:")
@@ -15,6 +16,7 @@ def get_credit_card_number():
         else:
             print("Invalid credit card number")
 
+
 def get_card_type(credit_card_number):
     credit_card_number = credit_card_number.replace(" ", "")
 
@@ -27,8 +29,6 @@ def get_card_type(credit_card_number):
         if credit_card_number[0] == "4":
             return "VISA"
         if "51" <= credit_card_number[0:2] <= "55":
-            return "MASTER CARD"
+            return "MASTERCARD"
 
-    return "Invalid"
-
-
+    return "INVALID"
