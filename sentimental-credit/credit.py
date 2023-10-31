@@ -9,9 +9,9 @@ def is_valid_credit_card(credit_card_number):
     if not credit_card_number.isdigit():
         return "Invalid! Please type in only digits!"
 
-    total, double = 0, false
+    total, double = 0, False
 
-    for i in range(len(credit_card_number) -1, -1, -1):
+    for i in range(len(credit_card_number) - 1, -1, -1):
         digit = int(credit_card_number[i])
         if double:
             digit *= 2
@@ -20,6 +20,7 @@ def is_valid_credit_card(credit_card_number):
         double = not double
 
     return total % 10 == 0
+
 
 def get_credit_card_number():
     while True:
@@ -30,7 +31,7 @@ def get_credit_card_number():
 
         if is_valid_credit_card(credit_card_number):
             card_type = "Invalid"
-            if len(credit_card_number) == 15 and credit_card_number[0:2] in ["34", "37"]:
+            if len(credit_card_number) == 15 and credit_card_number.startswith(("34", "37")):
                 return "AMEX"
             elif len(credit_card_number) == 16:
                 if credit_card_number[0] == "4":
@@ -40,3 +41,6 @@ def get_credit_card_number():
             print(f"Card Type: {card_type}")
         else:
             print("Invalid credit card number")
+
+
+get_credit_card_number()
