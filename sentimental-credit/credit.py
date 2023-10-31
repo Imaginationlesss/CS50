@@ -20,7 +20,8 @@ def get_card_type(credit_card_number):
 
     if not credit_card_number.isdigit():
         return "Invalid! Please type in only digits!"
-        get_credit_card_number()
+
+    
 
 
 
