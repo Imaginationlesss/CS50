@@ -37,7 +37,7 @@ def get_credit_card_number():
 
 
 def get_card_type(credit_card_number):
-     credit_card_number = credit_card_number.replace(" ", "")
+    credit_card_number = credit_card_number.replace(" ", "")
 
     if not credit_card_number.isdigit():
         return "INVALID"
