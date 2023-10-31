@@ -1,3 +1,5 @@
 # TODO
 
-import from cs50 get_int
+from cs50 import get_int
+
+
