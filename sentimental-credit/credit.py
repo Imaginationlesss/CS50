@@ -19,9 +19,7 @@ def get_card_type():
 
         card_type = get_card_type(credit_card_number)
         if card_type != "Invalid":
-            print(f"Card Type: {card_type}")
-        else:
-            print("Invalid credit card number")
+            
 
     if len(credit_card_number) == 15 and credit_card_number[0:2] in ["34", "37"]:
         return "AMEX"
