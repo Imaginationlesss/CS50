@@ -37,20 +37,20 @@ def get_credit_card_number():
 
 
 def get_card_type(credit_card_number):
-     credit_card_number = get_string("Enter credit card number:")
+     credit_card_number = credit_card_number.replace(" ", "")
 
-        if not credit_card_number:
-            return "INVALID"
-
-        if len(credit_card_number) == 15 and credit_card_number.startswith(("34", "37")):
-            return "AMEX"
-        elif len(credit_card_number) == 16:
-            if credit_card_number[0] == "4":
-                return "VISA"
-            elif "51" <= credit_card_number[0:2] <= "55":
-                return "MASTERCARD"
-
+    if not credit_card_number:
         return "INVALID"
+
+    if len(credit_card_number) == 15 and credit_card_number.startswith(("34", "37")):
+        return "AMEX"
+    elif len(credit_card_number) == 16:
+        if credit_card_number[0] == "4":
+            return "VISA"
+        elif "51" <= credit_card_number[0:2] <= "55":
+            return "MASTERCARD"
+
+    return "INVALID"
 
 
 get_credit_card_number()
