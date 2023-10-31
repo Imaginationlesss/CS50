@@ -26,7 +26,8 @@ def get_card_type(credit_card_number):
     if len(credit_card_number) == 16:
         if credit_card_number[0] == "4":
             return "VISA"
-        if 
+        if "51" <= credit_card_number[0:2] <= "55":
+            return "MASTER CARD"
 
 
 
