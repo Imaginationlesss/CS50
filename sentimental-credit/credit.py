@@ -52,5 +52,3 @@ def get_card_type(credit_card_number):
 
     return "INVALID"
 
-
-get_credit_card_number()
