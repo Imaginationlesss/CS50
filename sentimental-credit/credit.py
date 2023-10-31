@@ -10,7 +10,6 @@ def get_credit_card_number(credit_card_number):
         return "Invalid! Please type in only digits!"
 
 
-
 def get_card_type():
     while True:
         credit_card_number = get_string("Enter credit card number:")
