@@ -39,7 +39,7 @@ def get_credit_card_number():
 def get_card_type(credit_card_number):
      credit_card_number = credit_card_number.replace(" ", "")
 
-    if not credit_card_number:
+    if not credit_card_number.isdigit():
         return "INVALID"
 
     if len(credit_card_number) == 15 and credit_card_number.startswith(("34", "37")):
