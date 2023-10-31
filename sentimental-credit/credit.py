@@ -7,7 +7,7 @@ def is_valid_credit_card(credit_card_number):
     credit_card_number = credit_card_number.replace(" ", "")
 
     if not credit_card_number.isdigit():
-        return "Invalid! Please type in only digits!"
+        return False
 
     total, double = 0, False
 
