@@ -49,7 +49,7 @@ def get_card_type(credit_card_number):
     elif len(credit_card_number) == [13, 16]:
         if credit_card_number[0] == "4":
             return "VISA"
-        elif "51" <= credit_card_number[0:2] <= "55":
+        elif len(credit_card_number) == 16 and "51" <= credit_card_number[0:2] <= "55":
             return "MASTERCARD"
 
     return "INVALID"
