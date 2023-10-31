@@ -30,7 +30,7 @@ def get_credit_card_number():
             break
 
         if is_valid_credit_card(credit_card_number):
-            card_type = "Invalid"
+            card_type = "INVALID"
             if len(credit_card_number) == 15 and credit_card_number.startswith(("34", "37")):
                 return "AMEX"
             elif len(credit_card_number) == 16:
