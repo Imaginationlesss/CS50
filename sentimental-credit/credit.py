@@ -6,7 +6,7 @@ def get_credit_card_number():
     while True:
         credit_card_number = get_string("Enter credit card number:")
 
-        if not card_number:
+        if not credit_card_number:
             break
 
         if get_card_type(credit_card_number):
@@ -21,7 +21,7 @@ def get_card_type(credit_card_number):
     if not credit_card_number.isdigit():
         return "Invalid! Please type in only digits!"
 
-    if len(credit_card_number) == 15 and credit_card_number[0:2] in ["34", "37"]
+    if len(credit_card_number) == 15 and credit_card_number[0:2] in ["34", "37"]:
         return "AMEX"
     if len(credit_card_number) == 16:
         if credit_card_number[0] == "4":
