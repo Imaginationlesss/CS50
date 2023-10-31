@@ -29,5 +29,6 @@ def get_card_type(credit_card_number):
         if "51" <= credit_card_number[0:2] <= "55":
             return "MASTER CARD"
 
+    return "Invalid"
 
 
