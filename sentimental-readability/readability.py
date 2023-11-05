@@ -8,7 +8,7 @@ def main():
     letters = count_letters(text)
     words = count_words(text)
     sentences = count_sentences(text)
-    index = calculation(letters, words, sentences)
+    (round)index = calculation(letters, words, sentences)
 
     if index < 1:
         print("Before Grade 1")
