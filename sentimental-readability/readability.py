@@ -8,7 +8,7 @@ def main():
     letters = count_letters(text)
     words = count_words(text)
     sentences = count_sentences(text)
-    (round)index = calculation(letters, words, sentences)
+    index = calculation(letters, words, sentences)
 
     if index < 1:
         print("Before Grade 1")
@@ -32,7 +32,9 @@ def count_sentences(text):
 def calculation(letters, words, sentences):
     L = (letters / words) * 100
     S = (sentences / words) * 100
-    return sum(0.0588 * L - 0.296 * S - 15.8)
+    index = sum(0.0588 * L - 0.296 * S - 15.8)
+
+    return (round)index
 
 
 
