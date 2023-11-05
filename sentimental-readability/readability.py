@@ -34,7 +34,9 @@ def calculation(letters, words, sentences):
     S = (sentences / words) * 100
     index = sum(0.0588 * L - 0.296 * S - 15.8)
 
-    return (round)index
+    grade = (round)index
+
+    return grade
 
 
 
