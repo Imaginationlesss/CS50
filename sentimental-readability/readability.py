@@ -29,7 +29,10 @@ def count_sentences(text):
     sentence_ending = (".", "!", "?")
     return sum(1 for char in text if char in sentence_ending)
 
-def calculation(text)
+def calculation(letters, words, sentences)
+    L = (letters / words) * 100
+    S = (sentences / words) * 100
+    return sum(0.0588 * L - 0.296 * S - 15.8)
 
 
 
