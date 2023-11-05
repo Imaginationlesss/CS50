@@ -23,7 +23,10 @@ def count_letters(text):
 
 
 def count_words(text):
-    return 
+    return sum(text.split())
+
+def count_sentences(text):
+    return sum(1 for )
 
 
 
