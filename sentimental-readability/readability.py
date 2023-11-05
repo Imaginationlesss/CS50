@@ -26,7 +26,10 @@ def count_words(text):
     return sum(text.split())
 
 def count_sentences(text):
-    return sum(1 for char in text if )
+    sentence_ending = (".", "!", "?")
+    return sum(1 for char in text if char in sentence_ending)
+
+def calculation(text)
 
 
 
