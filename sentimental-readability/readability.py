@@ -1,7 +1,7 @@
 # TODO
 
-import get_string from cs50
+from cs50 import get_string
 
-def main()
+def main():
     text = get_string("Text: ")
-    
+
