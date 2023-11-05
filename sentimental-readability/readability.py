@@ -2,6 +2,7 @@
 
 from cs50 import get_string
 
+
 def main():
     text = get_string("Text: ")
 
@@ -25,9 +26,11 @@ def count_letters(text):
 def count_words(text):
     return len(text.split())
 
+
 def count_sentences(text):
     sentence_ending = (".", "!", "?")
     return sum(1 for char in text if char in sentence_ending)
+
 
 def calculation(letters, words, sentences):
     L = (letters / words) * 100
@@ -35,6 +38,3 @@ def calculation(letters, words, sentences):
     index = 0.0588 * L - 0.296 * S - 15.8
     grade = round(index)
     return grade
-
-
-
