@@ -19,7 +19,11 @@ def main():
 
 
 def count_letters(text):
-    
+    return sum(1 for char in text if char.isalpha())
+
+
+def count_words(text):
+    return 
 
 
 
