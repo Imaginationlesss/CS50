@@ -23,7 +23,7 @@ def count_letters(text):
 
 
 def count_words(text):
-    return sum(text.split())
+    return len(text.split())
 
 def count_sentences(text):
     sentence_ending = (".", "!", "?")
@@ -34,7 +34,7 @@ def calculation(letters, words, sentences):
     S = (sentences / words) * 100
     index = sum(0.0588 * L - 0.296 * S - 15.8)
 
-    grade = (round)index
+    grade = round(index)
 
     return grade
 
