@@ -26,7 +26,7 @@ def count_words(text):
     return sum(text.split())
 
 def count_sentences(text):
-    return sum(1 for chat in text if )
+    return sum(1 for char in text if )
 
 
 
