@@ -3,35 +3,30 @@ import sys
 
 
 def main():
-
     # TODO: Check for command-line usage
-    if  len(sys.argv) != 3:
+    if len(sys.argv) != 3:
         print("Incorect number of command-line arguments")
         sys.exit(1)
 
-
     # TODO: Read database file into a variable
-    with open(sys.argv[1], 'r') as csvfile:
+    with open(sys.argv[1], "r") as csvfile:
         reader = csv.DictReader(csvfile)
         data = list(reader)
         header = reader.fieldnames
 
-
     # TODO: Read DNA sequence file into a variable
-    with open(sys.argv[2], 'r') as sequencefile:
+    with open(sys.argv[2], "r") as sequencefile:
         dna = sequencefile.read()
-
 
     # TODO: Find longest match of each STR in DNA sequence
     str_match = {}
     for str in header[1:]:
         str_match[str] = longest_match(str, dna)
 
-
     # TODO: Check database for matching profiles
     for name in data:
         if all(str_match[str] == name[str] for str in str_match):
-            print(name['name'])
+            print(name["name"])
             break
     print("No match")
     return
@@ -47,7 +42,6 @@ def longest_match(sequence, subsequence):
 
     # Check each character in sequence for most consecutive runs of subsequence
     for i in range(sequence_length):
-
         # Initialize count of consecutive runs
         count = 0
 
@@ -55,7 +49,6 @@ def longest_match(sequence, subsequence):
         # If a match, move substring to next potential match in sequence
         # Continue moving substring and checking for matches until out of consecutive matches
         while True:
-
             # Adjust substring start and end
             start = i + count * subsequence_length
             end = start + subsequence_length
