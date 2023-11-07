@@ -24,11 +24,14 @@ def main():
         str_match[str] = longest_match(str, dna)
 
     # TODO: Check database for matching profiles
-    for name in data:
-        if all(str_match[str] == name[str] for str in str_match):
-            print(name["name"])
-            return
-    print("No match")
+    match_found = False
+    for row in data:
+        if all(int(row[str]) == str_match[str] for str in header[1:]):
+            print(row["name"])
+            match_found = True
+
+    if not match_found:
+        print("No match")
 
 
 
