@@ -14,7 +14,7 @@ def main():
 
     # TODO: Read DNA sequence file into a variable
     with open(argv[3]) as sequence:
-        
+        dna = csv.reader(sequence)
     # TODO: Find longest match of each STR in DNA sequence
 
     # TODO: Check database for matching profiles
