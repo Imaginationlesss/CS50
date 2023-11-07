@@ -13,8 +13,8 @@ def main():
         reader = csv.DictReader(csvfile)
 
     # TODO: Read DNA sequence file into a variable
-    with open(argv[3], 'r') as sequence:
-        dna = csv.reader(sequence)
+    with open(argv[3], 'r') as sequencefile:
+        dna = csv.reader(sequencefile)
     # TODO: Find longest match of each STR in DNA sequence
 
     # TODO: Check database for matching profiles
