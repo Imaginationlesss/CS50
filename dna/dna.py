@@ -28,7 +28,10 @@ def main():
 
 
     # TODO: Check database for matching profiles
-    
+    for name in data:
+        if all(str_match[str] == name[str] for str in str_match):
+            print(name['name'])
+            break
 
 
     return
