@@ -9,14 +9,14 @@ def main():
         print("Incorect number of command-line arguments")
 
     # TODO: Read database file into a variable
-    with open(argv[2]) as csvfile:
+    with open(argv[2], 'r') as csvfile:
         reader = csv.DictReader(csvfile)
 
     # TODO: Read DNA sequence file into a variable
-    with open(argv[3]) as sequence:
+    with open(argv[3], 'r') as sequence:
         dna = csv.reader(sequence)
     # TODO: Find longest match of each STR in DNA sequence
-    
+
     # TODO: Check database for matching profiles
 
     return
