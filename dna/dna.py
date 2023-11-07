@@ -27,9 +27,9 @@ def main():
     for name in data:
         if all(str_match[str] == name[str] for str in str_match):
             print(name["name"])
-            break
+            return
     print("No match")
-    return
+
 
 
 def longest_match(sequence, subsequence):
