@@ -24,7 +24,7 @@ def main():
     # TODO: Find longest match of each STR in DNA sequence
     str_match = {}
     for str in header[1:]:
-        str_match = longest_match(dna, )
+        str_match = longest_match(data, dna)
 
     # TODO: Check database for matching profiles
 
