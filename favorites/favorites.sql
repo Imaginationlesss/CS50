@@ -19,5 +19,9 @@ UPDATE shows SET title = "The Office" WHERE title LIKE "The Office";
 UPDATE shows SET title = "The Queen's Gambit" WHERE title LIKE "The Queen's Gambit";
 UPDATE shows SET title = "The Untamed" WHERE title LIKE "The Untamed";
 
+UPDATE shows SET title = "Brooklyn Nine-Nine" WHERE title LIKE "B99";
+UPDATE shows SET title = "Brooklyn Nine-Nine" WHERE title LIKE "Brooklyn%";
+UPDATE shows SET title = "Game Of Thrones" WHERE title LIKE "GoT";
+
 SELECT * FROM shows;
 
