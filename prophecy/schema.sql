@@ -9,3 +9,7 @@ CREATE TABLE houses (
     house TEXT NOT NULL,
     PRIMARY KEY(id)
 );
+
+CREATE TABLE house_assigment (
+    
+)
