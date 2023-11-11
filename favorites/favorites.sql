@@ -22,6 +22,8 @@ UPDATE shows SET title = "The Untamed" WHERE title LIKE "The Untamed";
 UPDATE shows SET title = "Brooklyn Nine-Nine" WHERE title LIKE "B99";
 UPDATE shows SET title = "Brooklyn Nine-Nine" WHERE title LIKE "Brooklyn%";
 UPDATE shows SET title = "Game Of Thrones" WHERE title LIKE "GoT";
+UPDATE shows SET title = "Grey's Anatomy" WHERE title LIKE "Grey's%";
+UPDATE shows SET title = "It's Always Sunny In Philadelphia" WHERE title LIKE "It's Always Sunny In Philadelphia"
 
-SELECT * FROM shows;
+SELECT * FROM shows ORDER BY tittle;
 
