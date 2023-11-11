@@ -26,6 +26,9 @@ UPDATE shows SET title = "Grey's Anatomy" WHERE title LIKE "Grey's%";
 UPDATE shows SET title = "It's Always Sunny In Philadelphia" WHERE title LIKE "%Always Sunny%";
 UPDATE shows SET title = "Parks and Recreation" WHERE title LIKE "Parks and%";
 UPDATE shows SET title = "The Office" WHERE title LIKE "%Office";
+UPDATE shows SET title = "Sherlock Holmes" WHERE title LIKE "Sherlock%";
+UPDATE shows SET title = "Billions" WHERE title LIKE "Billions";
+UPDATE shows SET title = "Criminal Minds" WHERE title LIKE "Criminal Minds";
 
 SELECT * FROM shows ORDER BY title;
 
