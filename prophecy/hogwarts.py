@@ -9,7 +9,10 @@ def filter_house(house, houses, head):
         houses.append({"house": house, "head": head})
 
 def filter_students(name, students):
-    students.append()
+    students.append({"student_name": name})
+
+def relations(name, house, house_assaigment):
+    house_assaigment.append({"sutdent_name": name, "house": house})
 
 
 
