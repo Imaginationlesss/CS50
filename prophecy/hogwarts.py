@@ -1,6 +1,6 @@
 import csv
 
-
+def
 students = []
 houses = []
 house_assaigment = []
@@ -8,5 +8,7 @@ house_assaigment = []
 with open("students.csv", "r") as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        print(row)
+        name = row["student_name"]
+        house = row["house"]
+        head = row["head"]
 
