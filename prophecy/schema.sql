@@ -1,19 +1,19 @@
 CREATE TABLE new_students (
-    id INTEGER NOT NULL,
-    student TEXT NOT NULL,
+    id INTEGER,
+    student_name TEXT,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE houses (
-    id INTEGER NOT NULL,
-    house TEXT NOT NULL,
-    head TEXT NOT NULL,
+    id INTEGER,
+    house TEXT,
+    head TEXT,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE house_assigment (
-    id INTEGER NOT NULL,
-    student TEXT NOT NULL,
-    house TEXT NOT NULL,
+    id INTEGER,
+    student_name TEXT,
+    house TEXT,
     PRIMARY KEY(id)
 );
