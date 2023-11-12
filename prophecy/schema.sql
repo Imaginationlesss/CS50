@@ -11,7 +11,7 @@ CREATE TABLE houses (
     PRIMARY KEY(id)
 );
 
-CREATE TABLE house_assigment (
+CREATE TABLE house_assaigment (
     id INTEGER,
     student_name TEXT,
     house TEXT,

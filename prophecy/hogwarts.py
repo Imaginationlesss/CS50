@@ -13,7 +13,7 @@ def filter_students(name, students):
     students.append({"student_name": name})
 
 def relations(name, house, house_assaigment):
-    house_assaigment.append({"sutdent_name": name, "house": house})
+    house_assaigment.append({"student_name": name, "house": house})
 
 db = SQL("sqlite:///roster.db")
 
