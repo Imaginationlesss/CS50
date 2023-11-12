@@ -1,6 +1,8 @@
 import csv
 
-def
+def filter_house(house, houses):
+    for 
+
 students = []
 houses = []
 house_assaigment = []
