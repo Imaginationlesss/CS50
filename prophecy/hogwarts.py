@@ -34,13 +34,13 @@ with open("students.csv", "r") as csvfile:
 
 print(houses)
 
-for student in students:
-    db.execute("INSERT INTO new_students (student_name) VALUES (?)", student["student_name"])
+#for student in students:
+    #db.execute("INSERT INTO new_students (student_name) VALUES (?)", student["student_name"])
 
 
-for house in houses:
-    db.execute("INSERT INTO houses (house, head) VALUES (?,?)", house["house"], house["head"])
+#for house in houses:
+    #db.execute("INSERT INTO houses (house, head) VALUES (?,?)", house["house"], house["head"])
 
 
-for assaigment in house_assaigment:
-    db.execute("INSERT INTO house_assaigment (student_name, house) VALUES (?,?)", assaigment["student_name"], assaigment["house"])
+#for assaigment in house_assaigment:
+    #db.execute("INSERT INTO house_assaigment (student_name, house) VALUES (?,?)", assaigment["student_name"], assaigment["house"])
