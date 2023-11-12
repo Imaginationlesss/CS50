@@ -1,14 +1,15 @@
 import csv
 
-def filter_house(house, houses):
+def filter_house(house, houses, head):
     count = 0
     for x in houses:
         if x == house:
             count += 1
     if count == 0:
-        houses.append(house)
+        houses.append({"house": house, "head": head})
 
-def filter_students(student_name, name):
+def filter_students(name, students):
+    students.append()
 
 
 
@@ -23,4 +24,4 @@ with open("students.csv", "r") as csvfile:
         house = row["house"]
         head = row["head"]
 
-        filter_house(house,houses)
+        filter_house(house, houses, head)
