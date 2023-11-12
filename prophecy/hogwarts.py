@@ -1,4 +1,5 @@
 import csv
+from cs50 import SQL
 
 def filter_house(house, houses, head):
     count = 0
@@ -14,7 +15,7 @@ def filter_students(name, students):
 def relations(name, house, house_assaigment):
     house_assaigment.append({"sutdent_name": name, "house": house})
 
-
+db = SQL("sqlite:///roaster.db")
 
 students = []
 houses = []
