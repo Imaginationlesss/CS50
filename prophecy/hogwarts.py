@@ -28,3 +28,6 @@ with open("students.csv", "r") as csvfile:
         head = row["head"]
 
         filter_house(house, houses, head)
+        filter_students(name, students)
+        relations(name, house, house_assaigment)
+        
