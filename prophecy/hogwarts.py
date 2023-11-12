@@ -32,4 +32,13 @@ with open("students.csv", "r") as csvfile:
         filter_students(name, students)
         relations(name, house, house_assaigment)
 
-print(house_assaigment)
+for student in students:
+    db.execute("INSERT INTO students (student_name) VALUES ?", student(["student_name"]))
+
+
+for house in houses:
+    db.execute("INSERT INTO houses (house) VALUES ?", house(["house"]))
+
+
+for assaigment in house_assaigment:
+    db.execute("INSERT INTO house_assaigment () )
