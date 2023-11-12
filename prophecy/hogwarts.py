@@ -33,7 +33,7 @@ with open("students.csv", "r") as csvfile:
         relations(name, house, house_assaigment)
 
 for student in students:
-    db.execute("INSERT INTO new_students (student_name) VALUES ?", student(["student_name"]))
+    db.execute("INSERT INTO new_students (student_name) VALUES ?", student(["students_name"]))
 
 
 for house in houses:
