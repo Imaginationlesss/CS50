@@ -15,7 +15,7 @@ def filter_students(name, students):
 def relations(name, house, house_assaigment):
     house_assaigment.append({"sutdent_name": name, "house": house})
 
-db = SQL("sqlite:///roaster.db")
+db = SQL("sqlite:///roster.db")
 
 students = []
 houses = []
