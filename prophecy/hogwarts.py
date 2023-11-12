@@ -37,8 +37,8 @@ for student in students:
 
 
 for house in houses:
-    db.execute("INSERT INTO houses (house) VALUES ?", house(["house"]))
+    db.execute("INSERT INTO houses (house, head) VALUES (?,?)", house(["house"]), house(["head"]))
 
 
 for assaigment in house_assaigment:
-    db.execute("INSERT INTO house_assaigment () )
+    db.execute("INSERT INTO house_assaigment (student_name, house) VALUES (?,?)", assaigment(["student_name"]), assaigment(["house"]))
