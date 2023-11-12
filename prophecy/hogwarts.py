@@ -4,7 +4,7 @@ from cs50 import SQL
 def filter_house(house, houses, head):
     count = 0
     for x in houses:
-        if x == house:
+        if x[house] == house:
             count += 1
     if count == 0:
         houses.append({"house": house, "head": head})
@@ -31,6 +31,8 @@ with open("students.csv", "r") as csvfile:
         filter_house(house, houses, head)
         filter_students(name, students)
         relations(name, house, house_assaigment)
+
+print(houses)
 
 for student in students:
     db.execute("INSERT INTO new_students (student_name) VALUES (?)", student["student_name"])
