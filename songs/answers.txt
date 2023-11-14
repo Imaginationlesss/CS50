@@ -1,2 +1,6 @@
+Question 1:
 As this list of songs avg.energy = 0.65906, avg.valence = 0.484443 and avg.danceability = 0.71646 this person more likely likes to dance and listens to more energetic music but because valence is below 0.5
 most probably likes slow as well as sad/depressed/angry music, and I'm not quite sure how to use this info to choose colours but they have decent aura with all types of music active energetic as well as sad which than averages like stats provided.
+
+Question 2:
+Well I supose one of the better ideas to figure out the aura of the person depending 
