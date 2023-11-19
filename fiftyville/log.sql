@@ -22,4 +22,6 @@ WHERE people.license_plate IN
  AND hour = 10
  AND minute BETWEEN 15 AND 25);
 
- --
+ --Cheking phone numbers and belonging to the people who left the bakery after theft
+
+
