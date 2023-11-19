@@ -5,3 +5,6 @@ SELECT description FROM crime_scene_reports WHERE day = 28 AND month = 7 AND str
 
 --Checking the transcripts from interviews where bakery is mentioned
 SELECT transcript FROM interviews WHERE day = 28 AND month = 7 AND year = 2021;
+
+--Checking secutiry logs to get more information about car that thief left with
+SELECT activity, license_plate FROM bakery_security_logs WHERE day = 28 AND month = 7 AND year = 2021 AND hour = 10 AND minute BETWEEN 15 AND 25;
