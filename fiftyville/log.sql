@@ -10,7 +10,7 @@ SELECT transcript FROM interviews WHERE day = 28 AND month = 7 AND year = 2021;
 SELECT activity, license_plate FROM bakery_security_logs WHERE day = 28 AND month = 7 AND year = 2021 AND hour = 10 AND minute BETWEEN 15 AND 25;
 
 -- Checking names of people with same license plates as the people who left bakery after theft
-SELECT name FROM people
+SELECT DISTINCT name FROM people
 JOIN bakery_security_logs
 ON people.license_plate = bakery_security_logs.license_plate
 WHERE people.license_plate IN
@@ -21,3 +21,5 @@ WHERE people.license_plate IN
  AND year = 2021
  AND hour = 10
  AND minute BETWEEN 15 AND 25);
+
+ --
