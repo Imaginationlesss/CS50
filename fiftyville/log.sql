@@ -22,6 +22,13 @@ WHERE people.license_plate IN
  AND hour = 10
  AND minute BETWEEN 15 AND 25);
 
- --Cheking phone numbers and belonging to the people who left the bakery after theft
+ --Cheking phone numbers who left the bakery after theft
+ SELECT caller, receiver FROM phone_calls WHERE day = 28 AND month = 7 AND year = 2021 AND duration < 600;
+
+ --Checking which number are for which person with the license plate that we already checked
+ SELECT DISTINCT name FROM people
+ 
+
+
 
 
