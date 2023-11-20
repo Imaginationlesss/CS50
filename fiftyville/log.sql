@@ -58,7 +58,13 @@ WHERE phone_number IN
   WHERE day = 28
   AND month = 7
   AND year = 2021
-  AND duration < 60);
+  AND duration < 60)
+  AND receiver IN
+  (SELECT receiver FROM phone_calls
+   WHERE day = 28
+   AND month = 7
+   AND year = 2021
+   AND duration < 60));
 
 --Getting id for Fiftyville airport
 SELECT id from airports
