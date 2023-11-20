@@ -240,7 +240,7 @@ WHERE bank_accounts.person_id IN
   AND transaction_type = "withdraw"
   AND day = 28
   AND month = 7))
-  name IN
+  AND name IN
   (SELECT name FROM people WHERE phone_number IN
  (SELECT caller FROM phone_calls
 WHERE caller IN
