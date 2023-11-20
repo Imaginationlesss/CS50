@@ -71,8 +71,7 @@ FROM people WHERE name IN
    AND month = 7
    AND year = 2021
    AND hour = 10
-   AND minute BETWEEN 15 AND 25));
-
+   AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 600;
 
 
 
