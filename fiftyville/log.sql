@@ -48,6 +48,9 @@ FROM people WHERE name IN
    AND hour = 10
    AND minute BETWEEN 15 AND 25);
 
+--Comparing the phone numbers of callers of specific information close to our suspect to the ones with the same name license plate numbers and name to distinguish the caller aka thief
+SELECT caller FROM phone_calls WHERE 
+
 
 
 
