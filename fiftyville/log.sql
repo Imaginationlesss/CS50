@@ -23,7 +23,7 @@ WHERE people.license_plate IN
  AND minute BETWEEN 15 AND 25);
 
  --Cheking phone numbers who left the bakery after theft
- SELECT caller, receiver FROM phone_calls WHERE day = 28 AND month = 7 AND year = 2021 AND duration < 600;
+ SELECT caller, receiver FROM phone_calls WHERE day = 28 AND month = 7 AND year = 2021 AND duration < 60;
 
  --Checking which number are for which person with the license plate that we already checked
 SELECT phone_number
@@ -71,7 +71,7 @@ FROM people WHERE name IN
    AND month = 7
    AND year = 2021
    AND hour = 10
-   AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 600;
+   AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 60;
 
 --Getting names of people who had phone calls after theft with specific time and length range who also left bakery withing ten minutes after theft
 SELECT name FROM people WHERE phone_number IN
@@ -99,5 +99,5 @@ FROM people WHERE name IN
    AND hour = 10
    AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 600);
 
-
+--
 
