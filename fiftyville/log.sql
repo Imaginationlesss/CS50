@@ -22,10 +22,10 @@ WHERE people.license_plate IN
  AND hour = 10
  AND minute BETWEEN 15 AND 25);
 
- --Cheking phone numbers who left the bakery after theft
+ --Cheking phone numbers of callers and receiver who left the bakery after theft
  SELECT caller, receiver FROM phone_calls WHERE day = 28 AND month = 7 AND year = 2021 AND duration < 60;
 
- --Checking Names that we checked with license plates with the phone_numbers
+ --Checking Names that we checked with license plates with the caller phone_numbers
 SELECT name FROM people
 WHERE name IN
  (SELECT DISTINCT name FROM people
