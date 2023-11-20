@@ -160,3 +160,5 @@ WHERE bank_accounts.person_id IN
                                         ORDER BY hour, minute ASC
                                         LIMIT 1));
 
+SELECT name FROM people
+JOIN
