@@ -147,7 +147,7 @@ WHERE bank_accounts.person_id IN
                                 AND passport_number IN
                                     (SELECT id FROM flights
                                     WHERE origin_airport_id = 8
-                                    AND destio
+                                    AND destination_airport_id = 4
                                     AND day = 29
                                     AND month = 7
                                     AND year = 2021
