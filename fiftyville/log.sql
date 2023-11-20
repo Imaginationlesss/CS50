@@ -26,8 +26,8 @@ WHERE people.license_plate IN
  SELECT caller, receiver FROM phone_calls WHERE day = 28 AND month = 7 AND year = 2021 AND duration < 60;
 
  --Checking which number are for which person with the license plate that we already checked
-SELECT phone_number
-FROM people WHERE name IN
+SELECT name FROM people
+WHERE name IN
  (SELECT DISTINCT name FROM people
  JOIN bakery_security_logs
  ON people.license_plate = bakery_security_logs.license_plate
