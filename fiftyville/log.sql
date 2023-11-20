@@ -104,7 +104,7 @@ AND transaction_type = "withdraw"
 AND day = 28
 AND month = 7);
 
---Getting name of the people who get withdraw from atm and matches license plate numbers
+--Getting name of the people who get withdraw from atm and matches license plate numbers as well as caller number
 SELECT name FROM people
 JOIN bank_accounts ON bank_accounts.person_id = people.id
 WHERE bank_accounts.person_id IN
