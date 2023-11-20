@@ -222,4 +222,21 @@ AND day = 28
 AND month = 7
 AND year = 2021;
 
-SELECT 
+SELECT person_id FROM bank_accounts
+WHERE account_number IN
+ (SELECT account_number FROM atm_transactions
+WHERE atm_location = "Leggett Street"
+AND transaction_type = "withdraw"
+AND day = 28
+AND month = 7);
+
+SELECT name FROM people
+JOIN bank_accounts ON bank_accounts.person_id = people.id
+WHERE bank_accounts.person_id IN
+ (SELECT person_id FROM bank_accounts
+ WHERE account_number IN
+  (SELECT account_number FROM atm_transactions
+  WHERE atm_location = "Leggett Street"
+  AND transaction_type = "withdraw"
+  AND day = 28
+  AND month = 7));
