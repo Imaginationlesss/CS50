@@ -215,5 +215,10 @@ SELECT seat from passengers WHERE flight_id IN
          AND duration < 60)));
 
 
-
+SELECT account_number FROM atm_transactions
+WHERE atm_location = "Legget Street"
+AND transaction_type = "Withdraw"
+AND day = 28
+AND month = 7
+AND year = 2021
 
