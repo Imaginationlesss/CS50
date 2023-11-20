@@ -26,8 +26,8 @@ WHERE people.license_plate IN
  SELECT caller, receiver FROM phone_calls WHERE day = 28 AND month = 7 AND year = 2021 AND duration < 600;
 
  --Checking which number are for which person with the license plate that we already checked
- SELECT DISTINCT name FROM people
- 
+ SELECT 
+
 
 
 
