@@ -25,7 +25,7 @@ WHERE people.license_plate IN
  --Cheking phone numbers who left the bakery after theft
  SELECT caller, receiver FROM phone_calls WHERE day = 28 AND month = 7 AND year = 2021 AND duration < 60;
 
- --Checking which number are for which person with the license plate that we already checked
+ --Checking Names that we checked with license plates with the phone_numbers
 SELECT name FROM people
 WHERE name IN
  (SELECT DISTINCT name FROM people
@@ -44,15 +44,7 @@ WHERE name IN
    WHERE day = 28
    AND month = 7
    AND year = 2021
-   AND duration < 60)
-   AND license_plate IN
-    (SELECT license_plate
-    FROM bakery_security_logs
-    WHERE day = 28
-    AND month = 7
-    AND year = 2021
-    AND hour = 10
-    AND minute BETWEEN 15 AND 25);
+   AND duration < 60);
 
 --Comparing the phone numbers of callers of specific information close to our suspect to the ones with the same name license plate numbers and name to distinguish the caller aka thief
 SELECT DISTINCT caller, receiver FROM phone_calls
@@ -82,36 +74,6 @@ FROM people WHERE name IN
    AND month = 7
    AND year = 2021
    AND duration < 60;
-
---Getting names of people who had phone calls after theft with specific time and length range who also left bakery withing ten minutes after theft
-SELECT name FROM people WHERE phone_number IN
- (SELECT caller FROM phone_calls
-WHERE caller IN
- (SELECT phone_number
-FROM people WHERE name IN
- (SELECT name FROM people
- JOIN bakery_security_logs
- ON people.license_plate = bakery_security_logs.license_plate
- WHERE people.license_plate IN
-  (SELECT license_plate
-  FROM bakery_security_logs
-  WHERE day = 28
-  AND month = 7
-  AND year = 2021
-  AND hour = 10
-  AND minute BETWEEN 15 AND 25))
-  AND license_plate IN
-   (SELECT license_plate
-   FROM bakery_security_logs
-   WHERE day = 28
-   AND month = 7
-   AND year = 2021
-   AND hour = 10
-   AND minute BETWEEN 15 AND 25))
-   AND day = 28
-   AND month = 7
-   AND year = 2021
-   AND duration < 60);
 
 --Getting names of people receiving calls
 SELECT name FROM people WHERE phone_number IN
