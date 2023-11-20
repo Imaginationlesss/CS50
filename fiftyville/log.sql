@@ -160,8 +160,15 @@ WHERE bank_accounts.person_id IN
                                         ORDER BY hour, minute ASC
                                         LIMIT 1));
 
+--Using name of thief to figure out who was accoplice
 SELECT name FROM people
 JOIN phone_calls ON people.phone_number = phone_calls.receiver
 WHERE phone_calls.caller IN
   (SELECT people.phone_number FROM people
-  WHERE people.name = "Bruce");
+  WHERE people.name = "Bruce")
+  AND phone_calls.receiver IN
+   (SELECT receiver FROM phone_calls
+   WHERE day = 28
+   AND month = 7
+   AND year = 2021
+   AND duration < 60);
