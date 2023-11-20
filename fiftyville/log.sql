@@ -63,11 +63,13 @@ WHERE phone_number IN
   AND hour = 10
   AND minute BETWEEN 15 AND 25))
   AND phone_number IN
-   ( SELECT caller FROM phone_calls
+   (SELECT receiver FROM phone_calls
+   WHERE caller IN
+   (SELECT caller FROM phone_calls
    WHERE day = 28
    AND month = 7
    AND year = 2021
-   AND duration < 60));
+   AND duration < 60)));
 
 --Getting id for Fiftyville airport
 SELECT id from airports WHERE city = "Fiftyville";
