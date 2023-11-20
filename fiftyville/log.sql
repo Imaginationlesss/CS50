@@ -79,7 +79,7 @@ FROM people WHERE name IN
 
 --Getting names of people who had phone calls after theft with specific time and length range who also left bakery withing ten minutes after theft
 SELECT name FROM people WHERE phone_number IN
- (SELECT DISTINCT caller, receiver FROM phone_calls
+ (SELECT DISTINCT caller FROM phone_calls
 WHERE caller IN
  (SELECT phone_number
 FROM people WHERE name IN
