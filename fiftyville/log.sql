@@ -39,14 +39,20 @@ WHERE name IN
   AND year = 2021
   AND hour = 10
   AND minute BETWEEN 15 AND 25))
-  AND license_plate IN
-   (SELECT license_plate
-   FROM bakery_security_logs
+  AND phone_number IN
+   ( SELECT caller FROM phone_calls
    WHERE day = 28
    AND month = 7
    AND year = 2021
-   AND hour = 10
-   AND minute BETWEEN 15 AND 25);
+   AND duration < 60)
+   AND license_plate IN
+    (SELECT license_plate
+    FROM bakery_security_logs
+    WHERE day = 28
+    AND month = 7
+    AND year = 2021
+    AND hour = 10
+    AND minute BETWEEN 15 AND 25);
 
 --Comparing the phone numbers of callers of specific information close to our suspect to the ones with the same name license plate numbers and name to distinguish the caller aka thief
 SELECT DISTINCT caller, receiver FROM phone_calls
