@@ -135,7 +135,15 @@ SELECT id, destination_airport_id, hour, minute FROM flights WHERE origin_airpor
 SELECT city FROM airports WHERE id = 4;
 
 --Finding the thief on specific flight with passpoert number matching suspects
-SELECT 
+SELECT seat from passengers WHERE flight id IN
+ (SELECT id FROM flights
+ WHERE origin_airport_id = 8
+ AND destination_airport_id = 4
+ AND day = 29
+ AND month = 7
+ AND year = 2021
+ AND hour = 8
+ AND minute = 20);
 
 
 
