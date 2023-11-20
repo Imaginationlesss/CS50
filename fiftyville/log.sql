@@ -99,7 +99,13 @@ FROM people WHERE name IN
    AND hour = 10
    AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 60);
 
---
+--Getting id for Fiftyville airport
 SELECT id from airports WHERE city = "Fiftyville";
 
-SELECT destination_airport_id, hour, minute FROM flights WHERE day = 29 AND month = 7 AND year = 2021 ORDER BY hour, minute ASC LIMIT 1;
+--Getting destination airport id
+SELECT destination_airport_id, hour, minute FROM flights WHERE origin_airport_id = 8 AND day = 29 AND month = 7 AND year = 2021 ORDER BY hour, minute ASC LIMIT 1;
+
+--Getting Name of the City thief is going
+SELECT city FROM airports WHERE id = 4;
+
+
