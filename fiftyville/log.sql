@@ -76,7 +76,16 @@ SELECT id from airports WHERE city = "Fiftyville";
 SELECT destination_airport_id, hour, minute FROM flights WHERE origin_airport_id = 8 AND day = 29 AND month = 7 AND year = 2021 ORDER BY hour, minute ASC LIMIT 1;
 
 --Getting Name of the City thief is going
-SELECT city FROM airports JOIN flights.;
+SELECT DISTINCT city FROM airports
+JOIN flights ON flights.destination_airport_id = airports.id
+WHERE flights.destination_airport_id IN
+ (SELECT destination_airport_id FROM flights
+ WHERE origin_airport_id = 8
+ AND day = 29
+ AND month = 7
+ AND year = 2021
+ ORDER BY hour, minute ASC
+ LIMIT 1);
 
 --Finding the thief on specific flight with passpoert number matching suspects
 SELECT passport_number FROM passengers
