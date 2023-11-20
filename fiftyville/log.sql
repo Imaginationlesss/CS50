@@ -103,9 +103,11 @@ FROM people WHERE name IN
 SELECT id from airports WHERE city = "Fiftyville";
 
 --Getting destination airport id
-SELECT destination_airport_id, hour, minute FROM flights WHERE origin_airport_id = 8 AND day = 29 AND month = 7 AND year = 2021 ORDER BY hour, minute ASC LIMIT 1;
+SELECT id, destination_airport_id, hour, minute FROM flights WHERE origin_airport_id = 8 AND day = 29 AND month = 7 AND year = 2021 ORDER BY hour, minute ASC LIMIT 1;
 
 --Getting Name of the City thief is going
 SELECT city FROM airports WHERE id = 4;
+
+SELECT 
 
 
