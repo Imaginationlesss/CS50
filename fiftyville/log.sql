@@ -162,4 +162,6 @@ WHERE bank_accounts.person_id IN
 
 SELECT name FROM people
 JOIN phone_calls ON people.phone_number = phone_calls.receiver
-WHERE phone_calls.caller
+WHERE phone_calls.caller IN
+  (SELECT people.phone_number FROM people
+  WHERE people.name = "Bruce");
