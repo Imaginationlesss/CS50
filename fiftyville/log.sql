@@ -79,7 +79,7 @@ FROM people WHERE name IN
 
 --Getting names of people who had phone calls after theft with specific time and length range who also left bakery withing ten minutes after theft
 SELECT name FROM people WHERE phone_number IN
- (SELECT DISTINCT caller FROM phone_calls
+ (SELECT caller FROM phone_calls
 WHERE caller IN
  (SELECT phone_number
 FROM people WHERE name IN
@@ -101,11 +101,15 @@ FROM people WHERE name IN
    AND month = 7
    AND year = 2021
    AND hour = 10
-   AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 60);
+   AND minute BETWEEN 15 AND 25))
+   AND day = 28
+   AND month = 7
+   AND year = 2021
+   AND duration < 60);
 
 --Getting names of people receiving calls
 SELECT name FROM people WHERE phone_number IN
- (SELECT DISTINCT receiver FROM phone_calls
+ (SELECT receiver FROM phone_calls
 WHERE caller IN
  (SELECT phone_number
 FROM people WHERE name IN
@@ -127,7 +131,11 @@ FROM people WHERE name IN
    AND month = 7
    AND year = 2021
    AND hour = 10
-   AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 60);
+   AND minute BETWEEN 15 AND 25))
+   AND day = 28
+   AND month = 7
+   AND year = 2021
+   AND duration < 60);
 
 --Getting passport numbers of 4 suspercts
 SELECT passport_number FROM people WHERE name IN (SELECT name FROM people WHERE phone_number IN
