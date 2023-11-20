@@ -56,7 +56,6 @@ WHERE phone_number IN
    AND month = 7
    AND year = 2021
    AND duration < 60))
-   AND
 
 
 --Getting id for Fiftyville airport
