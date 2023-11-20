@@ -101,3 +101,5 @@ FROM people WHERE name IN
 
 --
 SELECT id from airports WHERE city = "Fiftyville";
+
+SELECT destination_airport_id, hour, minute, FROM flights WHERE day = 29 AND month = 7 AND year = 2021 GROUP BY hour, minute ASC LIMIT 1;
