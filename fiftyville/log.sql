@@ -161,4 +161,5 @@ WHERE bank_accounts.person_id IN
                                         LIMIT 1));
 
 SELECT name FROM people
-JOIN
+JOIN phone_calls ON people.phone_number = phone_calls.receiver
+WHERE phone_calls.caller
