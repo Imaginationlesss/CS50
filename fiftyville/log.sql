@@ -104,7 +104,7 @@ AND transaction_type = "withdraw"
 AND day = 28
 AND month = 7);
 
---Getting name of the people who get withdraw from atm and matches license plate numbers as well as caller number
+--Getting name of the Thief who get withdraw from atm and matches license plate numbers as well as caller number
 SELECT name FROM people
 JOIN bank_accounts ON bank_accounts.person_id = people.id
 WHERE bank_accounts.person_id IN
@@ -145,12 +145,14 @@ WHERE bank_accounts.person_id IN
                                 AND year = 2021
                                 AND duration < 60))
                                 AND passport_number IN
-                                    (SELECT id FROM flights
-                                    WHERE origin_airport_id = 8
-                                    AND destination_airport_id = 4
-                                    AND day = 29
-                                    AND month = 7
-                                    AND year = 2021
-                                    ORDER BY hour, minute ASC
-                                    LIMIT 1);
+                                    (SELECT passport_number FROM passengers
+                                    WHERE flight_id IN
+                                        (SELECT id FROM flights
+                                        WHERE origin_airport_id = 8
+                                        AND destination_airport_id = 4
+                                        AND day = 29
+                                        AND month = 7
+                                        AND year = 2021
+                                        ORDER BY hour, minute ASC
+                                        LIMIT 1));
 
