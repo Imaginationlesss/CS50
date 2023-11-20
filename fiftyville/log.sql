@@ -49,7 +49,7 @@ FROM people WHERE name IN
    AND minute BETWEEN 15 AND 25);
 
 --Comparing the phone numbers of callers of specific information close to our suspect to the ones with the same name license plate numbers and name to distinguish the caller aka thief
-SELECT DISTINCT caller FROM phone_calls
+SELECT DISTINCT caller, receiver FROM phone_calls
 WHERE caller IN
  (SELECT phone_number
 FROM people WHERE name IN
@@ -175,8 +175,6 @@ SELECT seat from passengers WHERE flight_id IN
          AND month = 7
          AND year = 2021
          AND duration < 60)));
-
-
 
 
 
