@@ -99,6 +99,32 @@ FROM people WHERE name IN
    AND hour = 10
    AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 60);
 
+--Getting passport numbers of 4 suspercts
+SELECT passport_number FROM people WHERE name IN (SELECT name FROM people WHERE phone_number IN
+ (SELECT DISTINCT caller FROM phone_calls
+WHERE caller IN
+ (SELECT phone_number
+FROM people WHERE name IN
+ (SELECT DISTINCT name FROM people
+ JOIN bakery_security_logs
+ ON people.license_plate = bakery_security_logs.license_plate
+ WHERE people.license_plate IN
+  (SELECT license_plate
+  FROM bakery_security_logs
+  WHERE day = 28
+  AND month = 7
+  AND year = 2021
+  AND hour = 10
+  AND minute BETWEEN 15 AND 25))
+  AND license_plate IN
+   (SELECT license_plate
+   FROM bakery_security_logs
+   WHERE day = 28
+   AND month = 7
+   AND year = 2021
+   AND hour = 10
+   AND minute BETWEEN 15 AND 25)) AND day = 28 AND month = 7 AND year = 2021 AND duration < 60));
+
 --Getting id for Fiftyville airport
 SELECT id from airports WHERE city = "Fiftyville";
 
@@ -108,6 +134,10 @@ SELECT id, destination_airport_id, hour, minute FROM flights WHERE origin_airpor
 --Getting Name of the City thief is going
 SELECT city FROM airports WHERE id = 4;
 
+--Finding the thief on specific flight with passpoert number matching suspects
 SELECT 
+
+
+
 
 
