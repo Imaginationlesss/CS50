@@ -220,5 +220,5 @@ WHERE atm_location = "Legget Street"
 AND transaction_type = "Withdraw"
 AND day = 28
 AND month = 7
-AND year = 2021
+AND year = 2021;
 
