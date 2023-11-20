@@ -113,7 +113,7 @@ SELECT name FROM people WHERE phone_number IN
 WHERE caller IN
  (SELECT phone_number
 FROM people WHERE name IN
- (SELECT DISTINCT name FROM people
+ (SELECT name FROM people
  JOIN bakery_security_logs
  ON people.license_plate = bakery_security_logs.license_plate
  WHERE people.license_plate IN
