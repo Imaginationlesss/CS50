@@ -216,7 +216,7 @@ SELECT seat from passengers WHERE flight_id IN
 
 
 SELECT account_number FROM atm_transactions
-WHERE atm_location = "Legget Street"
+WHERE atm_location = "Leggett Street"
 AND transaction_type = "Withdraw"
 AND day = 28
 AND month = 7
