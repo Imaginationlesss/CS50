@@ -73,10 +73,10 @@ WHERE phone_number IN
 SELECT id from airports WHERE city = "Fiftyville";
 
 --Getting destination airport id
-SELECT id, destination_airport_id, hour, minute FROM flights WHERE origin_airport_id = 8 AND day = 29 AND month = 7 AND year = 2021 ORDER BY hour, minute ASC LIMIT 1;
+SELECT destination_airport_id, hour, minute FROM flights WHERE origin_airport_id = 8 AND day = 29 AND month = 7 AND year = 2021 ORDER BY hour, minute ASC LIMIT 1;
 
 --Getting Name of the City thief is going
-SELECT city FROM airports WHERE id = 4;
+SELECT city FROM airports JOIN flights.;
 
 --Finding the thief on specific flight with passpoert number matching suspects
 SELECT passport_number FROM passengers
