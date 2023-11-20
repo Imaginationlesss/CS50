@@ -40,7 +40,7 @@ FROM people WHERE name IN
   AND hour = 10
   AND minute BETWEEN 15 AND 25))
   AND license_plate IN
-   (SELECT activity, license_plate
+   (SELECT license_plate
    FROM bakery_security_logs
    WHERE day = 28
    AND month = 7
