@@ -54,8 +54,9 @@ WHERE phone_number IN
   (SELECT caller FROM phone_calls
   WHERE day = 28
   AND month = 7
-  AND year = 2021 
-  AND duration < 60));
+  AND year = 2021
+  AND duration < 60))
+  AND
 
 --Getting id for Fiftyville airport
 SELECT id from airports WHERE city = "Fiftyville";
