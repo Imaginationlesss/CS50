@@ -144,7 +144,7 @@ FROM people WHERE name IN
    AND month = 7
    AND year = 2021
    AND duration < 60))
-   AND flight_id IN
+   AND passport_number IN
     (SELECT id FROM flights
     WHERE origin_airport_id = 8
     AND day = 29
