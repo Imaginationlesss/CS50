@@ -239,4 +239,5 @@ WHERE bank_accounts.person_id IN
   WHERE atm_location = "Leggett Street"
   AND transaction_type = "withdraw"
   AND day = 28
-  AND month = 7));
+  AND month = 7))
+  
