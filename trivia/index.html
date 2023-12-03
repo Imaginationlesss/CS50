@@ -8,18 +8,12 @@
         <script>
             // TODO: Add code to check answers to questions
             function selectOption(option) {
-                if (option.classList.contains('selected')) {
+                const selectedOptions = document.querySelectorAll('.option.selected');
+                for (const option of selectedOptions) {
                     option.classList.remove('selected');
-                } else {
+                }
                     option.classList.add('selected');
                 }
-                updatedSelectedOptions;
-
-            function updatedSelectedOptions {
-                var selectedOptions = document.querySelectorAll('option.selected');
-                var selectedOptionsText
-            }
-            }
         </script>
     </head>
     <body>
