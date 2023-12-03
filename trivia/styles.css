@@ -50,7 +50,10 @@ button, input[type="submit"] {
     vertical-align: middle;
 }
 
-
+.option:hover {
+    background-color: #d9edff;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 input[type="text"] {
     line-height: 1.8;
     width: 25%;
