@@ -54,7 +54,7 @@ button, input[type="submit"] {
     background-color: #8dc9ff;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-.selected {
+#selectedOptions {
     background-color: #8dc9ff;
 }
 }
