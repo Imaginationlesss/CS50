@@ -7,19 +7,7 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
-            function selectOption(option) {
-                if (option.classList.contains('selected')) {
-                    option.classList.remove('selected');
-                } else {
-                option.classList.add('selected');
-            }
-            updateSelectedOptions();
-
-            function updateSelectedOptions() {
-                var selectedOptions = document.querySelectorAll('.option.selected');
-                var selectedOptionsText = Array.selectedOptions.map(option => option.textContent).join(', ');
-                document.getElementById('selectedOptions').textContent = 'Selected Options: ' + selectedOptionsText;
-            }
+            
       </script>
     </head>
     <body>
@@ -33,10 +21,10 @@
                 <hr>
                 <!-- TODO: Add multiple choice question here -->
                 <h3>Which organ is the largest in humans body?</h3>
-                    <button class="option" onclick="selectOption(this)" type="sumbit" value="option1" name="Stomach">Stomach</button>
-                    <button class="option" onclick="selectOption(this)" type="sumbit" value="option2" name="Guts">Guts</button>
-                    <button class="option" onclick="selectOption(this)" type="sumbit" value="option3" name="Skin">Skin</button>
-                    <button class="option" onclick="selectOption(this)" type="sumbit" value="option4" name="LIver">Liver</button>
+                    <button class="incorrect" onclick="selectOption(this)" type="sumbit" value="option1" name="Stomach">Stomach</button>
+                    <button class="incorrect" onclick="selectOption(this)" type="sumbit" value="option2" name="Guts">Guts</button>
+                    <button class="incorrect" onclick="selectOption(this)" type="sumbit" value="option3" name="Skin">Skin</button>
+                    <button class="correct" onclick="selectOption(this)" type="sumbit" value="option4" name="LIver">Liver</button>
                 <h2>Part 2: Free Response</h2>
                 <hr>
                 <!-- TODO: Add free response question here -->
