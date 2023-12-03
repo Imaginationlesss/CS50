@@ -17,7 +17,8 @@
 
             function updateSelectedOptions() {
                 var selectedOptions = document.querySelectorAll('.option.selected');
-                var se
+                var selectedOptionsText = Array.selectedOptions.map(option => option.textContent).join(', ');
+                document.getElementById('selectedOptions').textContent = 'Selected Options: ' + selectedOptionsText;
             }
       </script>
     </head>
