@@ -24,8 +24,17 @@
                     });
                 }
                 //Checks text input
-                document.addEventListener ('click', )
-                let
+                document.querySelector('#checker').addEventListener ('click', function () {
+                    let checker = document.querySelector('textinput');
+                    if (textinput.value == 'Whale') {
+                        textinput.style.backgroundColor = 'green'
+                        document.querySelector('#answer2').innerHTML = "Correct!"
+                    } else {
+                        textinput.style.backgroundColor = 'red'
+                        document.querySelector('#answer2').innerHTML = "Incorrect!";
+                    }
+                });
+            });
       </script>
     </head>
     <body>
