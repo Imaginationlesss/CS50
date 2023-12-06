@@ -19,8 +19,8 @@
                 <h3>Which organ is the largest in humans body?</h3>
                     <button class="incorrect">Stomach</button>
                     <button class="incorrect">Guts</button>
-                    <button class="incorrect">Skin</button>
-                    <button class="correct">Liver</button>
+                    <button class="incorrect">Liver</button>
+                    <button class="correct">Skin</button>
                     <p id="answer1"></p>
                 <h2>Part 2: Free Response</h2>
                 <hr>
@@ -33,7 +33,6 @@
         </div>
         <script>
             // TODO: Add code to check answers to questions
-
             //Checks correct answer
             let correct = document.querySelector('.correct');
             document.addEventListener ('DOMContentLoaded', function () {
@@ -52,7 +51,7 @@
                 //Checks text input
                 let checker = document.querySelector('input');
                 document.querySelector('#checker').addEventListener ('click', function () {
-                    if (checker.value == 'Whale') {
+                    if (checker.value == 'Whale', "whale") {
                         checker.style.backgroundColor = 'green'
                         document.querySelector('#answer2').innerHTML = "Correct!"
                     } else {
