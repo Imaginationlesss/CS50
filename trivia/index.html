@@ -12,14 +12,14 @@
             document.addEventListener ('DOMContentLoaded', function () {
                 let correct = document.querySelector('.correct');
                 correct.addEventListener('click', function () {
-                    correct.style.backgroundColor = 'green';
+                    this.style.backgroundColor = 'green';
                     document.querySelector('#answer1').innerHTML = "Correct!";
                 })
                 //Checks incorrect answers
                 let incorrects = document.querySelectorAll ('.incorrect');
                 for (i = 0; i < incorrects.length; i++) {
                     incorrects[i].addEventListener ('click', function () {
-                    incorrects[i].style.backgroundColor = 'red';
+                    this.style.backgroundColor = 'red';
                     document.querySelector('#answer1').innerHTML = "Incorrect!';
                     });
                 }
