@@ -13,10 +13,13 @@
                     correct.style.backgroundColor = 'green';
                     document.querySelector('#answer1').innerHTML = "Correct!";
                 })
-                let incorrect = document.querySelectorAll ('.incorrect');
-                incorreect.style.backgroundColor = 'red';
-                document.querySelectorAll('#answer1').innerHTML = "Incorrect!';
-                )}
+                let incorrects = document.querySelectorAll ('.incorrect');
+                for (i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener ('click', function () {
+                    incorreects[i].style.backgroundColor = 'red';
+                    document.querySelector('#answer1').innerHTML = "Incorrect!';
+                    });
+                }
       </script>
     </head>
     <body>
