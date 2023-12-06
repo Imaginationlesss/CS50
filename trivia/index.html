@@ -7,12 +7,15 @@
         <title>Trivia!</title>
         <script>
             // TODO: Add code to check answers to questions
+
+            //Checks correct answer
             document.addEventListener ('DOMContentLoaded', function () {
                 let correct = document.querySelector('.correct');
                 correct.addEventListener('click', function () {
                     correct.style.backgroundColor = 'green';
                     document.querySelector('#answer1').innerHTML = "Correct!";
                 })
+                //Checks incorrect answers
                 let incorrects = document.querySelectorAll ('.incorrect');
                 for (i = 0; i < incorrects.length; i++) {
                     incorrects[i].addEventListener ('click', function () {
@@ -20,6 +23,8 @@
                     document.querySelector('#answer1').innerHTML = "Incorrect!';
                     });
                 }
+                //Checks text input
+                
       </script>
     </head>
     <body>
