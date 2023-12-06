@@ -24,13 +24,13 @@
                     });
                 }
                 //Checks text input
+                let checker = document.querySelector('input');
                 document.querySelector('#checker').addEventListener ('click', function () {
-                    let checker = document.querySelector('input');
-                    if (textinput.value == 'Whale') {
-                        this.style.backgroundColor = 'green'
+                    if (checker.value == 'Whale') {
+                        checker.style.backgroundColor = 'green'
                         document.querySelector('#answer2').innerHTML = "Correct!"
                     } else {
-                        this.style.backgroundColor = 'red'
+                        checker.style.backgroundColor = 'red'
                         document.querySelector('#answer2').innerHTML = "Incorrect!";
                     }
                 });
