@@ -9,8 +9,8 @@
             // TODO: Add code to check answers to questions
 
             //Checks correct answer
+            let correct = document.querySelector('.correct');
             document.addEventListener ('DOMContentLoaded', function () {
-                let correct = document.querySelector('.correct');
                 correct.addEventListener('click', function () {
                     this.style.backgroundColor = 'green';
                     document.querySelector('#answer1').innerHTML = "Correct!";
