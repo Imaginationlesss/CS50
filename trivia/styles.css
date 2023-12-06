@@ -53,8 +53,9 @@ button, input[type="submit"] {
 .option:hover {
     background-color: #8dc9ff;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 
-input[type="text"]:hover {
-    background-color: #f5f5f5;
-    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+.correct:hover {
+    background-color: #8dc9ff;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
