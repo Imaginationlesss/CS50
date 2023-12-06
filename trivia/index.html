@@ -25,12 +25,12 @@
                 }
                 //Checks text input
                 document.querySelector('#checker').addEventListener ('click', function () {
-                    let checker = document.querySelector('textinput');
+                    let checker = document.querySelector('input');
                     if (textinput.value == 'Whale') {
-                        textinput.style.backgroundColor = 'green'
+                        this.style.backgroundColor = 'green'
                         document.querySelector('#answer2').innerHTML = "Correct!"
                     } else {
-                        textinput.style.backgroundColor = 'red'
+                        this.style.backgroundColor = 'red'
                         document.querySelector('#answer2').innerHTML = "Incorrect!";
                     }
                 });
