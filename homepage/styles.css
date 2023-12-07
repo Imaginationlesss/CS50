@@ -1,3 +1,27 @@
 .site-header {
     padding: 3rem 5vw;
 }
+
+.site-nav {
+    max-width: 96rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.site-nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6495ED;
+}
+
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 0;
+}
