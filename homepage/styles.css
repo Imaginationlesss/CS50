@@ -25,3 +25,8 @@
 .menu li {
     margin-bottom: 0;
 }
+
+.menu a {
+    display: block;
+    padding: 1rem;
+}
