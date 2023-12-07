@@ -52,5 +52,21 @@
 }
 
 .hero {
-    max-width
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.hero div:first-child {
+    flex-basis: 65%;
+    padding-right: 2.5rem;
+}
+
+.hero div:last-child {
+    flex-basis: 35%;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 100%;
 }
