@@ -7,13 +7,14 @@
 
 .about {
     font-family: Georgia;
-    font-size: 40px;
+    font-size: 50px;
     color: #006400;
 }
 
 .favourites {
     font-family: serif;
     font: "Times New Romana";
+    font-size: 40px;
     color: #FF4500;
     margin:
 }
@@ -26,5 +27,9 @@
 .list {
     padding: 1rem;
     position: center;
+}
+
+li {
+    text
 }
 
