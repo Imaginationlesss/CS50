@@ -3,7 +3,6 @@
     font-size: 55px;
     color: #0d6efd;
     text-emphasis: underline;
-    display: flex;
 }
 
 .about {
@@ -11,7 +10,8 @@
     font-size: 40px;
     color: #006400;
     padding-bottom: 15px;
-    display: flex;
+    border: 2px solid;
+    border-color: black;
 }
 
 .favourites {
@@ -20,20 +20,19 @@
     font-size: 30px;
     color: #FF4500;
     padding-top: 20px;
-    display: flex;
+    border: 2px;
 }
 
 .table {
     margin: 1rem;
     position: center;
-    display: flex;
+    border: 2px;
 }
 
 .list {
     padding: 20px;
     position: center;
     list-style: none;
-    display: flex;
 }
 
 ul {
