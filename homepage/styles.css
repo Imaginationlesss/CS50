@@ -9,6 +9,7 @@
     font-family: Georgia;
     font-size: 40px;
     color: #006400;
+    padding-bottom: 15px;
 }
 
 .favourites {
@@ -16,7 +17,7 @@
     font: "Times New Romana";
     font-size: 30px;
     color: #FF4500;
-    margin:
+    padding-top: 20px;
 }
 
 .table {
@@ -25,12 +26,19 @@
 }
 
 .list {
-    padding: 1rem;
+    padding: 20px;
     position: center;
     list-style: none;
 }
 
- {
-    text-decoration: none;
+ul {
+    position: center;
+}
+li {
+    padding-bottom: 10px;
+}
+
+ol {
+    padding-bottom: 10px;
 }
 
