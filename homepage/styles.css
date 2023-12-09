@@ -16,3 +16,7 @@
     font: "Times New Romana";
     color: #FF4500;
 }
+
+li:hover {
+    color: #4682B4;
+}
