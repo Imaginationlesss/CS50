@@ -27,9 +27,10 @@
 .list {
     padding: 1rem;
     position: center;
+    list-style: none;
 }
 
-li {
-    text
+ {
+    text-decoration: none;
 }
 
