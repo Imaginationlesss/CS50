@@ -1,20 +1,20 @@
 
-var navbarhome = document.getElementById("Home");
-navbar.addEventListener("click", function() {
-    alert("Welcome, here you will read gereral information about me!")
+var navbarHome = document.getElementById("Home");
+navbarHome.addEventListener("click", function() {
+    alert("Welcome to homepage, here you will read gereral information about me!")
 })
 
 var navbarHobby = document.getElementById("Hobbies");
-navbar.addEventListener("click", function() {
+navbarHobby.addEventListener("click", function() {
     alert("Welcome, here you will read about my Hobbies!")
 })
 
-var navbarinterests = document.getElementById("Interests");
-navbar.addEventListener("click", function() {
+var navbarInterests = document.getElementById("Interests");
+navbarinterests.addEventListener("click", function() {
     alert("Welcome, here you will read about my Interests!")
 })
 
-var navbarmusic = document.getElementById("Music");
-navbar.addEventListener("click", function() {
+var navbarMusic = document.getElementById("Music");
+navbarmusic.addEventListener("click", function() {
     alert("Welcome, here you will read about my favourtite Songs!")
 })
