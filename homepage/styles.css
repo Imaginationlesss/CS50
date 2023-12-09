@@ -20,10 +20,11 @@
 
 .table {
     margin: 1rem;
-    
+    position: center;
 }
 
 .list {
     padding: 1rem;
+    position: center;
 }
 
