@@ -15,6 +15,6 @@ navbarinterests.addEventListener("click", function() {
 })
 
 var navbarMusic = document.getElementById("Music");
-navbarmusic.addEventListener("click", function() {
+navbarMusic.addEventListener("click", function() {
     alert("Welcome, here you will read about my favourtite Songs!")
 })
