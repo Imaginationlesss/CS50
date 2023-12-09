@@ -11,7 +11,14 @@
     display: flex;
 }
 
-.image
+.introductuion {
+    flex-basis: 65%;
+    padding-right: 2.5rem;
+}
+
+.image {
+    flex-basis: 35%;
+}
 
 .nav-item {
     padding-left: 50px;
