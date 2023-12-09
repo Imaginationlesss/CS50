@@ -103,9 +103,16 @@ ol {
 
 tr {
     font-size: 2rem;
-    text-align: center;
 }
 
+th {
+    text-align: center;
+    padding-top: 100px;
+}
+
+td {
+    text-align: center;
+}
 
 img {
     border-radius: 50%;
