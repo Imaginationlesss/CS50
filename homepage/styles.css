@@ -10,8 +10,6 @@
     font-size: 40px;
     color: #006400;
     padding-bottom: 15px;
-    border: 2px solid;
-    border-color: black;
 }
 
 .favourites {
@@ -26,7 +24,8 @@
 .table {
     margin: 1rem;
     position: center;
-    border: 2px;
+    border: 1px solid;
+    border-color: black;
 }
 
 .list {
@@ -36,7 +35,8 @@
 }
 
 ul {
-    display: center;
+    border: 1px solid;
+    border-color: black;
 }
 li {
     padding-bottom: 10px;
