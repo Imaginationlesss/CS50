@@ -10,7 +10,7 @@ navbarHobby.addEventListener("click", function() {
 })
 
 var navbarInterests = document.getElementById("Interests");
-navbarinterests.addEventListener("click", function() {
+navbarInterests.addEventListener("click", function() {
     alert("Welcome, here you will read about my Interests!")
 })
 
