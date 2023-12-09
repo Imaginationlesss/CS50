@@ -64,6 +64,13 @@
     height: 1000px;
 }
 
+.mainlist {
+    padding: 20px;
+    text-align: left;
+    list-style: none;
+}
+
+
 .list {
     padding: 20px;
     position: center;
@@ -83,6 +90,10 @@
 }
 
 h2 {
+    padding-bottom: 20px;
+}
+
+h4 {
     padding-bottom: 20px;
 }
 
