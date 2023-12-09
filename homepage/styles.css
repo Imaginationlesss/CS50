@@ -42,7 +42,7 @@
 .favourites {
     font-family: serif;
     font: "Times New Romana";
-    font-size: 30px;
+    font-size: 40px;
     color: #FF4500;
     padding-top: 20px;
     border: 2px;
@@ -75,10 +75,6 @@
 
 h2 {
     padding-bottom: 20px;
-}
-
-h3 {
-    font-size: 50px;
 }
 
 
