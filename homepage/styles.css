@@ -58,6 +58,11 @@
     border-color: black;
 }
 
+.container {
+    width: 1500px;
+    height: 1000px;
+}
+
 .list {
     padding: 20px;
     position: center;
