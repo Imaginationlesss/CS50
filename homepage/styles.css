@@ -3,6 +3,7 @@
     font-size: 55px;
     color: #0d6efd;
     text-emphasis: underline;
+    padding: 1rem;
 }
 
 .nav-item {
@@ -11,6 +12,7 @@
 
 .navbar-nav {
     display: flex;
+    width: 100%;
 }
 
 .about {
@@ -66,5 +68,9 @@ li {
 ol {
     font-size: 1.5rem;
     padding-bottom: 10px;
+}
+
+img {
+    
 }
 
