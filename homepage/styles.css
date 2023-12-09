@@ -5,6 +5,12 @@
     text-emphasis: underline;
 }
 
+.nav-item {
+    padding-left: 50px;
+    justify-content: space-between;
+
+}
+
 .about {
     font-family: Georgia;
     font-size: 40px;
