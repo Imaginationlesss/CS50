@@ -40,11 +40,12 @@
 }
 
 .favourites {
+    display: flex;
     font-family: serif;
     font-size: 40px;
     color: #FF4500;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-left: 20px;
     border: 2px;
 }
 
