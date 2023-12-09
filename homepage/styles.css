@@ -8,5 +8,5 @@
 .about {
     font-family: Georgia;
     font-size: 40px;
-    color: #6610f2;
+    color: $teal-600;
 }
