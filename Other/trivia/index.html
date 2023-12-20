@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which organ is the largest in humans body?</h3>
+                    <button class="incorrect">Stomach</button>
+                    <button class="incorrect">Guts</button>
+                    <button class="incorrect">Liver</button>
+                    <button class="correct">Skin</button>
+                    <p id="answer1"></p>
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What's the biggest living creature in the world?</h3>
+                <input type="text"></input>
+                <button id="checker">Check</button>
+                <p id="answer2"></p>
+            </div>
+        </div>
+        <script>
+            // TODO: Add code to check answers to questions
+            //Checks correct answer
+            let correct = document.querySelector('.correct');
+            document.addEventListener ('DOMContentLoaded', function () {
+                correct.addEventListener('click', function () {
+                    this.style.backgroundColor = 'green';
+                    document.querySelector('#answer1').innerHTML = "Correct!";
+                })
+                //Checks incorrect answers
+                let incorrects = document.querySelectorAll ('.incorrect');
+                for (i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener ('click', function () {
+                    this.style.backgroundColor = 'red';
+                    document.querySelector('#answer1').innerHTML = "Incorrect!";
+                    });
+                }
+                //Checks text input
+                let checker = document.querySelector('input');
+                document.querySelector('#checker').addEventListener ('click', function () {
+                    if (checker.value == 'Whale', "whale") {
+                        checker.style.backgroundColor = 'green'
+                        document.querySelector('#answer2').innerHTML = "Correct!"
+                    } else {
+                        checker.style.backgroundColor = 'red'
+                        document.querySelector('#answer2').innerHTML = "Incorrect!";
+                    }
+                });
+            });
+      </script>
+    </body>
+</html>
